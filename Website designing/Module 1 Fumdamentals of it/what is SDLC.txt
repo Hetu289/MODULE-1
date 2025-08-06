@@ -1,0 +1,30 @@
+What is SDLC?
+Definaton:
+SDLC stands for Software Development Life Cycle. It is a process used by software industry to design, develop, and test high-quality software. The SDLC aims to produce software that meets or exceeds customer expectations, is completed within time and cost estimates, and works efficiently.
+
+Types of SDLC Models and Their Definitions:
+
+1. Waterfall Model:
+    - Definition: A linear and sequential approach where each phase must be completed before the next begins.
+    - Example: Building a banking application where requirements are well understood.
+
+2. Agile Model:
+    - Definition: An iterative and incremental approach that emphasizes flexibility and customer collaboration.
+    - Example: Developing a mobile app with frequently changing requirements.
+
+3. V-Model (Verification and Validation Model):
+    - Definition: An extension of the waterfall model where each development stage is associated with a testing phase.
+    - Example: Developing safety-critical software for medical devices.
+
+4. Iterative Model:
+    - Definition: Software is developed and improved through repeated cycles (iterations).
+    - Example: Creating a web-based platform where features are added in each iteration.
+
+5. Spiral Model:
+    - Definition: Combines iterative development with systematic aspects of the waterfall model, focusing on risk analysis.
+    - Example: Large-scale enterprise software with high risk and complex requirements.
+
+6. Big Bang Model:
+    - Definition: Development starts with little planning and resources are allocated as needed; suitable for small projects.
+    - Example: Small student projects or proof-of-concept prototypes.
+

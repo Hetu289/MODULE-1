@@ -1,0 +1,38 @@
+What is Software Requirements Specification (SRS)?
+
+Definition:
+- SRS is a document that describes what the software will do and how it will be expected to perform. It outlines functional and non-functional requirements, constraints, and interfaces for a software system.
+
+Types of SRS:
+
+1. Functional Requirements:
+    - Definition: Specify what the system should do, the features and functions.
+    - Example: "The system shall allow users to log in using a username and password."
+
+2. Non-Functional Requirements:
+    - Definition: Specify how the system performs a function, including quality attributes.
+    - Example: "The system shall respond to user queries within 2 seconds."
+
+3. Interface Requirements:
+    - Definition: Describe how the system interacts with other systems or hardware.
+    - Example: "The system shall communicate with the payment gateway via REST API."
+
+4. Performance Requirements:
+    - Definition: Specify performance criteria such as speed, capacity, and reliability.
+    - Example: "The system shall support up to 1000 concurrent users."
+
+5. Security Requirements:
+    - Definition: Specify security constraints and measures.
+    - Example: "The system shall encrypt all user data using AES-256."
+
+6. Usability Requirements:
+    - Definition: Specify user experience and ease of use.
+    - Example: "The system shall provide a help section accessible from every page."
+
+7. Reliability Requirements:
+    - Definition: Specify the ability of the system to operate without failure.
+    - Example: "The system shall have 99.9% uptime."
+
+Summary:
+- SRS is essential for clear communication between stakeholders and developers.
+- It helps ensure the software meets user needs and expectations.

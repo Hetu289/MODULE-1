@@ -1,0 +1,22 @@
+What is DNS?
+Defination:
+DNS (Domain Name System) is a system that translates human-friendly domain names (like www.example.com) into IP addresses that computers use to identify each other on the network.
+
+Types of DNS:
+
+1. Recursive DNS Server:
+    - Definition: A server that receives DNS queries from client machines and takes responsibility for finding the correct IP address by querying other DNS servers if needed.
+    - Real-life example: When you type "www.google.com" in your browser, your ISP's recursive DNS server finds the IP address for Google and returns it to your computer.
+
+2. Authoritative DNS Server:
+    - Definition: A server that holds the actual DNS records for a domain and provides answers to queries about those domains.
+    - Real-life example: The DNS server managed by "example.com" contains the official IP address for "www.example.com".
+
+3. DNS Resolver:
+    - Definition: A client-side service or software that initiates DNS queries to translate domain names into IP addresses.
+    - Real-life example: Your computer or smartphone uses a DNS resolver to look up the IP address of a website you want to visit.
+
+4. Forwarding DNS Server:
+    - Definition: A server that forwards DNS queries to another DNS server instead of resolving them itself.
+    - Real-life example: A company’s internal DNS server forwards all external DNS queries to the ISP’s DNS server.
+

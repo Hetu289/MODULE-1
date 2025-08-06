@@ -1,0 +1,12 @@
+What is LAN ,WAN , MAN?
+LAN (Local Area Network):
+Definition: A LAN is a network that connects computers and devices within a limited geographical area, such as a home, school, or office building.
+Example: The network in an office that connects all employees' computers and printers.
+
+WAN (Wide Area Network):
+Definition: A WAN is a network that covers a broad area, such as a city, country, or even global connections, often using leased telecommunication lines.
+Example: The internet is the largest WAN, connecting computers worldwide.
+
+MAN (Metropolitan Area Network):
+Definition: A MAN is a network that spans a city or a large campus, connecting multiple LANs within that area.
+Example: A city's government offices connected together using a MAN.

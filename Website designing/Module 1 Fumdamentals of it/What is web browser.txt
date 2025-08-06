@@ -1,0 +1,9 @@
+What is web browser?
+Definaton:
+A web browser is a software application used to access, retrieve, and view information on the World Wide Web. It allows users to visit websites, navigate between pages, and interact with online content.
+
+Examples of web browsers include:
+- Google Chrome
+- Mozilla Firefox
+- Microsoft Edge
+- Safari

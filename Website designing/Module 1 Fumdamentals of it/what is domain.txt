@@ -1,0 +1,5 @@
+What is Domain?
+
+A domain is a unique name that identifies a website on the internet.
+ It is part of a URL (Uniform Resource Locator) and typically consists of a name and a domain extension, such as example.com.
+ Domains are used to make websites easily accessible and memorable for users.

@@ -1,0 +1,24 @@
+What is software? 
+Defination:
+Software is a set of instructions, data, or programs used to operate computers and perform specific tasks. It is the intangible component of computers, as opposed to hardware, which is the physical part.
+
+Types of Software:
+
+1. System Software
+    - Definition: System software manages and controls computer hardware so that application software can function. It acts as a platform for other software.
+    - Examples: Operating Systems (Windows, macOS, Linux), Device Drivers, Utility Programs.
+
+2. Application Software
+    - Definition: Application software is designed to help users perform specific tasks or applications.
+    - Examples: Microsoft Word, Adobe Photoshop, Web Browsers (Google Chrome, Mozilla Firefox).
+
+3. Programming Software
+    - Definition: Programming software provides tools to programmers for creating, debugging, and maintaining other software and applications.
+    - Examples: Compilers (GCC), Interpreters (Python Interpreter), Integrated Development Environments (Visual Studio Code, Eclipse).
+
+4. Embedded Software
+    - Definition: Embedded software is specialized software designed to operate hardware devices and is typically found in non-computer devices.
+    - Examples: Software in washing machines, cars, smart TVs, medical devices.
+
+Summary:
+Software enables computers and devices to perform useful tasks. It is categorized into system software, application software, programming software, and embedded software, each serving different purposes.

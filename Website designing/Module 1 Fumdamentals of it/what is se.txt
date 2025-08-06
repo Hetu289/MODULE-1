@@ -1,0 +1,4 @@
+What is se?
+Defination:
+SE stands for Software Engineering. It is the discipline of designing, developing, testing,
+ and maintaining software applications using engineering principles and best practices.

@@ -1,0 +1,25 @@
+What is URL?
+Defination:
+URL stands for Uniform Resource Locator. It is the address used to access resources on the internet, such as web pages, images, or files.
+
+Types of URLs:
+1. Absolute URL:
+    - Definition: Specifies the complete path to a resource, including protocol, domain, and file location.
+    - Example: https://www.example.com/index.html
+
+2. Relative URL:
+    - Definition: Specifies the path relative to the current page or directory.
+    - Example: /images/photo.jpg
+
+3. Protocol-specific URL:
+    - Definition: Uses a specific protocol to access resources.
+    - Example: ftp://ftp.example.com/file.txt
+
+Example of a URL breakdown:
+https://www.example.com:80/path/page.html?query=123#section
+- Protocol: https
+- Domain: www.example.com
+- Port: 80
+- Path: /path/page.html
+- Query: ?query=123
+- Fragment: #section

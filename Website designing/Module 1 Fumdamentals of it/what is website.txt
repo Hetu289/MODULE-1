@@ -1,0 +1,32 @@
+What is website?
+Defination:A website is a collection of related web pages and digital content accessible through the internet using a web browser. Websites are hosted on servers and can provide information, services, or interactive features to users.
+
+**Types of websites with real-time examples:**
+
+1. **Informational Website:**  
+    Provides information about a topic.  
+    *Example:* Wikipedia (https://www.wikipedia.org)
+
+2. **E-commerce Website:**  
+    Allows users to buy and sell products online.  
+    *Example:* Amazon (https://www.amazon.com)
+
+3. **Social Networking Website:**  
+    Enables users to connect and interact.  
+    *Example:* Facebook (https://www.facebook.com)
+
+4. **Portfolio Website:**  
+    Showcases an individual's or company's work.  
+    *Example:* Behance (https://www.behance.net)
+
+5. **Blog:**  
+    Shares articles, opinions, or news.  
+    *Example:* Medium (https://medium.com)
+
+6. **Educational Website:**  
+    Provides learning resources and courses.  
+    *Example:* Coursera (https://www.coursera.org)
+
+7. **News Website:**  
+    Delivers current events and news updates.  
+    *Example:* BBC News (https://www.bbc.com/news)
