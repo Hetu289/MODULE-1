@@ -1,0 +1,2 @@
+wjat is dynamic website?
+A dynamic website is a website whose content can change in response to user interactions, database updates, or other factors. Unlike static websites, which display the same information to every visitor, dynamic websites use server-side technologies (such as PHP, ASP.NET, or Node.js) to generate content on-the-fly. This allows for features like user login, personalized content, real-time updates, and interactive forms.
