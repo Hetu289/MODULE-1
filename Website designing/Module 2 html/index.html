@@ -5,43 +5,58 @@
     <title>Welcome</title>
     <style>
         body {
-            background-color: lightblue;
+            background-color: #fff0f5;
+            color: #4a235a;
+            font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            font-family: Arial, sans-serif;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        }
+        header {
             text-align: center;
+            padding: 50px 0 20px;
+            background-color: #f8bbd0;
         }
         h1 {
-            color: black;
             font-size: 48px;
+            color: #880e4f;
         }
-        ul {
-            list-style: none;
-            padding: 0;
-            font-size: 20px;
-            text-align: left;
-            margin-top: 20px;
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
         }
-        ul li {
-            margin-bottom: 10px;
+        .about {
+            background-color: #ffe4ec;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+        }
+        .about h2 {
+            color: #d81b60;
+        }
+        .about p {
+            line-height: 1.6;
         }
         strong {
-            color: darkblue;
+            color: #ad1457;
         }
     </style>
 </head>
 <body>
-    <h1>Welcome</h1>
-    <ul>
-        <li>👩‍💻 Name: <strong>Hetvi Makasana</strong></li>
-        <li>💻 Studying: <strong>Frontend Development</strong></li>
-        <li>🏫 College: <strong>VVP</strong></li>
-        <li>📚 Semester: <strong>5th Semester</strong></li>
-    </ul>
+
+    <header>
+        <h1>Welcome</h1>
+    </header>
+
+    <div class="container">
+        <section class="about">
+            <h2>About Me</h2>
+            <p>Hi! I’m <strong>Hetvi Makasana</strong>, a passionate Computer Engineering student at VVP Engineering College, currently in my <strong>5th semester</strong>.</p>
+            <p>I have hands-on experience with HTML, CSS, JavaScript, C, and Java, and I’m currently expanding my skills in Python. I enjoy creating visually appealing, user-friendly websites and exploring new technologies.</p>
+            <p>Right now, I’m building a <strong>URL Encoder/Decoder</strong> project. It converts text to URL-safe format and back, helping handle spaces, special characters, and Unicode correctly. I’m focusing on clean UI and reliable functionality using JavaScript.</p>
+            <p>When I’m not coding, you’ll find me enjoying early morning cycling, nature walks, sketching, or diving into interesting science topics—especially physics.</p>
+        </section>
+    </div>
+
 </body>
 </html>
