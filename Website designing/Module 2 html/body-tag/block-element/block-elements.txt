@@ -1,0 +1,62 @@
+What are Block Elements in HTML?
+
+Block elements always start on a new line.
+They take up the full available width of their parent container (by default).
+They can contain other block elements or inline elements.
+Commonly used for structuring layouts and grouping content.
+
+Common Block Elements (with examples)
+
+1. Structural / Layout Elements
+
+   * <div> → Generic container for grouping content.
+   * <section> → Thematic grouping of content.
+   * <article> → Independent, self-contained content (e.g., blog post).
+   * <aside> → Tangential content (e.g., sidebar).
+   * <header> → Introductory content / navigation.
+   * <footer> → Footer of a page or section.
+   * <main> → Main content of the document.
+   * <nav> → Navigation links.
+
+2. Headings and Text
+
+   * <h1> to <h6> → Headings (different levels).
+   * <p> → Paragraph.
+   * <blockquote> → Long quotation (usually indented).
+   * <pre> → Preformatted text (preserves spaces/line breaks).
+   * <address> → Contact information.
+   * <hr> → Thematic break (horizontal rule).
+
+3. Lists
+
+   * <ul> → Unordered list.
+   * <ol> → Ordered list.
+   * <li> → List item (inside `<ul>` or `<ol>`).
+   * <dl> → Description list.
+   * <dt> → Term in description list.
+   * <dd> → Description/definition of term.
+
+4. Tables
+
+   * <table> → Table structure.
+   * <tr> → Table row.
+   * <td> → Table data cell.
+   * <th> → Table header cell.
+   * <caption> → Caption/title of a table.
+
+5. Forms and Interactive
+
+   * <form> → Form container.
+   * <fieldset> → Group of related form elements.
+   * <legend> → Caption for `<fieldset>`.
+   * <label> → Label for form control.
+   * <details> → Expandable/collapsible content.
+   * <summary> → Summary/heading for `<details>`.
+   * <dialog> → Dialog box or modal.
+
+6. Media & Figures
+
+   * <figure> → Self-contained content (image, chart, code).
+   * <figcaption> → Caption for `<figure>`.
+   * <canvas> → Drawing graphics via JavaScript.
+
