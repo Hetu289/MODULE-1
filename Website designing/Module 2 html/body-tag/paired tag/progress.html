@@ -1,76 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
-<title>Technical Skills</title>
-<style>
-  body { font-family: system-ui, Arial, sans-serif; margin: 24px; }
-  .skills { max-width: 520px; margin-inline: auto; }
-  .skills h2 { margin: 0 0 12px; }
-  .skill { display: grid; grid-template-columns: 140px 1fr 48px; align-items: center; gap: 10px; margin: 10px 0; }
-  label { font-weight: 600; }
-  /* optional: light styling for progress */
-  progress { width: 100%; height: 14px; border-radius: 7px; overflow: hidden; }
-  progress::-webkit-progress-bar { background: #eee; }
-  progress::-webkit-progress-value { background: #4caf50; }
-  progress::-moz-progress-bar { background: #4caf50; }
-</style>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>progress</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
 </head>
 <body>
-  <section class="skills" aria-label="Technical skills">
-    <h2>Technical Skills</h2>
+    
+    <div style="width: 60%; height: auto; margin: auto; margin-top: 5%;">
+        <h1>Our technical skills</h1>
+        <hr style="width: 30%;" align="left"/>
+        <label>c language</label>
+        <br>
+        <progress style="width: 100%;" value="65" min="0" max="100"></progress>
+        <br>
+        <label>c++ language</label>
+        <br>
+        <progress style="width: 100%;" value="95" min="0" max="100"></progress>
+        <br>
+        <label>Java</label>
+        <br>
+        <progress style="width: 100%;" value="35" min="0" max="100"></progress>
+        <br>
+        <label>Frontend (React js)</label>
+        <br>
+        <progress style="width: 100%;" value="98" min="0" max="100"></progress>
+        <br>
+        <label>Angular</label>
+        <br>
+        <progress style="width: 100%;" value="75" min="0" max="100"></progress>
+        <br>
+        <label>PHP (Laravel)</label>
+        <br>
+        <progress style="width: 100%;" value="99" min="0" max="100"></progress>
+        <br>
+        <label>Devops(Github | Cloud computing | ci/cd | fullstack | Mernstack)</label>
+        <br>
+        <progress style="width: 100%;" value="75" min="0" max="100"></progress>
+        <br>
 
-    <div class="skill">
-      <label for="html">HTML</label>
-      <progress id="html" value="90" max="100">90%</progress>
-      <span class="pct"></span>
     </div>
-
-    <div class="skill">
-      <label for="css">CSS</label>
-      <progress id="css" value="80" max="100">80%</progress>
-      <span class="pct"></span>
-    </div>
-
-    <div class="skill">
-      <label for="js">JavaScript</label>
-      <progress id="js" value="75" max="100">75%</progress>
-      <span class="pct"></span>
-    </div>
-
-    <div class="skill">
-      <label for="java">Java</label>
-      <progress id="java" value="70" max="100">70%</progress>
-      <span class="pct"></span>
-    </div>
-
-    <div class="skill">
-      <label for="dbms">DBMS</label>
-      <progress id="dbms" value="65" max="100">65%</progress>
-      <span class="pct"></span>
-    </div>
-
-    <div class="skill">
-      <label for="os">Operating Systems</label>
-      <progress id="os" value="60" max="100">60%</progress>
-      <span class="pct"></span>
-    </div>
-
-    <div class="skill">
-      <label for="oop">OOP</label>
-      <progress id="oop" value="85" max="100">85%</progress>
-      <span class="pct"></span>
-    </div>
-  </section>
-
-  <script>
-    // Show percentages automatically
-    document.querySelectorAll('.skill').forEach(row => {
-      const p = row.querySelector('progress');
-      const pct = Math.round((p.value / p.max) * 100) + '%';
-      row.querySelector('.pct').textContent = pct;
-    });
-  </script>
 </body>
 </html>
