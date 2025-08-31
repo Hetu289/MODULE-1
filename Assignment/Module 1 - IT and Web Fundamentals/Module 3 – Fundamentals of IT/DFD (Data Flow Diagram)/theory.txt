@@ -1,0 +1,13 @@
+significance:
+
+Clear Visualization – Shows the flow of information between processes, data stores, and external entities in a simple, graphical way.
+
+Better Understanding – Helps analysts, developers, and stakeholders understand system functionality without needing technical details.
+
+Requirement Analysis – Identifies what data is needed, where it comes from, and how it is processed.
+
+Error Detection – Helps find missing data, unnecessary processes, or inefficient workflows early in analysis.
+
+Improved Communication – Acts as a common language between technical teams and non-technical stakeholders.
+
+Foundation for Design – Provides a blueprint that guides database design, process modeling, and system architecture.

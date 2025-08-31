@@ -1,0 +1,42 @@
+Level 0 (Context Diagram) :
+
+[Patient] ───► (Hospital Management System) ───► [Doctor]
+[Doctor] ───► (Hospital Management System) ───► [Patient]
+[Admin]  ───► (Hospital Management System) ───► [Reports / Records]
+
+Level 1 DFD
+
+Entities and Processes:
+
+Patient Module
+
+Input: Patient registration details, appointment request.
+
+Output: Appointment confirmation, medical reports, bills.
+
+Doctor Module
+
+Input: Diagnosis details, prescriptions, test requests.
+
+Output: Patient treatment records, prescriptions.
+
+Admin Module
+
+Input: Staff details, hospital resources, billing data.
+
+Output: Reports, staff schedules, payment receipts.
+
+Database (Data Store)
+
+Stores: Patient records, doctor records, appointments, billing information.
+
+DFD Flow:
+
+[Patient] ─► (1.0 Register/Book Appointment) ─► [Patient Database]
+
+[Doctor] ─► (2.0 Diagnosis & Prescription) ─► [Medical Records Database]
+
+[Admin] ─► (3.0 Manage Staff & Billing) ─► [Billing Database]
+
+[Hospital Management System] ─► Generates Reports ─► [Admin / Management]
+

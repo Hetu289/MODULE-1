@@ -1,0 +1,15 @@
+Advantages of Using Web Applications over Desktop Applications
+
+No Installation Required – Web apps run directly in a browser, saving storage space and setup time.
+
+Accessibility Anywhere – Can be accessed from any device with internet, supporting remote work.
+
+Cross-Platform Compatibility – Work on Windows, Mac, Linux, or mobile without separate versions.
+
+Easy Maintenance & Updates – Updates are done on the server side, so users always get the latest version automatically.
+
+Cost-Effective – Reduces the need for complex installations and version management across devices.
+
+Collaboration Support – Many web apps allow multiple users to work together in real time (e.g., Google Docs).
+
+Centralized Data Storage – Data is stored in the cloud/server, making it secure and accessible from anywhere.

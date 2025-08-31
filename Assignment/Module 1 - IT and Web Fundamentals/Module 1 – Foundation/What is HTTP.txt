@@ -1,0 +1,13 @@
+What is HTTP ?
+
+HTTP stands for Hyper Text Transfer Protocol.
+
+It is the protocol used for communication between a web browser (client) and a web server.
+
+When you type a website URL (like http://example.com) in your browser, HTTP defines how the request (from browser) and response (from server) should be sent and received.
+
+It is a stateless protocol, meaning each request is independent and does not remember previous requests.
+
+Example: If you request a webpage, your browser sends an HTTP Request, and the server replies with an HTTP Response (containing HTML, CSS, images, etc.).
+
+Modern websites mostly use HTTPS (HTTP Secure), which is HTTP with encryption (SSL/TLS) for security.

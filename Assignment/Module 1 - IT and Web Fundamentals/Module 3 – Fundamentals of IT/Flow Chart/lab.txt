@@ -1,0 +1,21 @@
+Flowchart :
+
+-> Online Registration System
+
+Start
+
+Display registration form to the user
+
+User enters registration details
+
+Validate the entered details
+
+If details are invalid → Show error message → Go back to form entry
+
+If details are valid → Proceed
+
+Store the details in the database
+
+Display registration success message to the user
+
+End

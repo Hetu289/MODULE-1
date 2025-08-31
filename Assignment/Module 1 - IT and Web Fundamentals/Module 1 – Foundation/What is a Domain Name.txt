@@ -1,0 +1,16 @@
+What is a Domain Name?
+
+A domain name is the human-readable address of a website.
+
+Example: google.com, facebook.com.
+
+Computers use IP addresses (like 142.250.183.206) to identify each other, but these are hard for humans to remember.
+Domain names are like nicknames for IP addresses.
+
+Parts of a domain name:
+www.example.com
+www → Subdomain
+example → Domain name
+.com → Extension (TLD = Top Level Domain)
+
+Domain names are managed by DNS (Domain Name System) which translates the name into an IP address so browsers can find the correct server.

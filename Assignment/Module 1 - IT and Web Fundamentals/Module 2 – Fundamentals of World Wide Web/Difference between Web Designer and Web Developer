@@ -1,0 +1,21 @@
+Difference between Web Designer and Web Developer.
+
+Web Designer:
+
+Focuses on the look and feel of a website.
+Works on UI/UX (User Interface & User Experience).
+Uses tools like Photoshop, Figma, Canva and languages like HTML, CSS (basic).
+Ensures the site is attractive, responsive, and user-friendly.
+Example: Choosing colors, layouts, fonts, button designs.
+
+Web Developer:
+
+Focuses on the functionality and logic of a website.
+Works on coding and programming.
+Uses languages like JavaScript, PHP, Python, Java, Node.js, etc.
+Ensures the site is working properly (forms, database, login systems, e-commerce, etc.).
+Example: Making a login system, shopping cart, or data storage.
+
+In short:
+Designer = “How it looks” (Front-end visual design)
+Developer = “How it works” (Coding + Backend functionality)

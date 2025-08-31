@@ -1,0 +1,15 @@
+Role of UI/UX Design in Application Development
+
+Enhances Usability – Ensures the application is easy to navigate, making tasks simple for users.
+
+Improves User Satisfaction – A clean and attractive interface (UI) combined with a smooth user journey (UX) keeps users engaged.
+
+Increases Efficiency – Well-structured design reduces time and effort needed to perform actions.
+
+Builds Brand Image – A consistent and appealing design reflects professionalism and trust.
+
+Reduces Errors – Clear layouts and intuitive workflows minimize user mistakes.
+
+Boosts Retention – Positive user experiences encourage people to continue using the app.
+
+Supports Accessibility – Good UI/UX makes applications usable for people with diverse needs.

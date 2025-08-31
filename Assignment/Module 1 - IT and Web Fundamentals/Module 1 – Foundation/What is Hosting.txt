@@ -1,0 +1,16 @@
+What is Hosting?
+
+Hosting is a service that provides storage space and resources on a web server to make your website accessible on the internet.
+
+When you create a website, all files (HTML, CSS, images, databases) need to be stored on a server that is connected to the internet.
+
+Hosting companies (like Hostinger, Bluehost, GoDaddy, etc.) rent or sell this server space.
+
+Types of hosting:
+
+Shared Hosting – Many websites on one server (cheap, but limited).
+VPS Hosting – Virtual Private Server, better performance.
+Dedicated Hosting – One full server for one client (expensive, powerful).
+Cloud Hosting – Uses multiple servers (scalable, reliable).
+
+Without hosting, your website files would just sit on your computer and wouldn’t be visible to the world.

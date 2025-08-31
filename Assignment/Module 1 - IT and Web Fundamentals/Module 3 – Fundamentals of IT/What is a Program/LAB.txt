@@ -1,0 +1,64 @@
+Write a simple "Hello World" program in two different programming languages ofyour choice.
+Compare the structure and syntax.
+
+
+1. C Example :
+
+#include <stdio.h>   
+
+int main() {
+    printf("Hello, World!\n");  
+    return 0;  
+}
+
+2. Java Example :
+
+public class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+
+Comparison between C and Java (Hello World Program)
+
+1. Code Structure
+
+C → Procedural (program is built using functions).
+
+Java → Object-Oriented (program must be inside a class).
+
+2. Entry Point
+
+C → Starts execution from int main().
+
+Java → Starts execution from public static void main(String[] args).
+
+3. Printing Syntax
+
+C → Uses printf("Hello, World!\n");.
+
+Java → Uses System.out.println("Hello, World!");.
+
+4. Header / Imports
+
+C → Requires #include <stdio.h> to use printf.
+
+Java → No extra header needed, but a class definition is mandatory.
+
+5. Execution Type
+
+C → Directly compiled into machine code (runs faster, platform-dependent).
+
+Java → Compiled into bytecode which runs on the Java Virtual Machine (JVM) (platform-independent).
+
+6. Code Length
+
+C → Shorter, around 6–7 lines.
+
+Java → More verbose, requires at least 5–6 lines with class and main method.
+
+7. Use Case
+
+C → Used in system programming, operating systems, embedded systems, and low-level hardware control.
+
+Java → Used in application programming, mobile apps (Android), enterprise applications, and cross-platform software.

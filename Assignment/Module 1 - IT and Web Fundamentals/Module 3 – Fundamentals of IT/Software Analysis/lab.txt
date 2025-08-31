@@ -1,0 +1,36 @@
+Functional Analysis of an Online Shopping System
+1. User Functions
+
+User Registration & Login – Customers can create accounts, log in, and manage profiles.
+
+Product Browsing & Search – Search products by name, category, brand, or price.
+
+Shopping Cart – Add, update, or remove items before checkout.
+
+Order Placement – Place orders with selected products and quantities.
+
+Payment Processing – Support multiple payment modes (credit card, debit card, UPI, net banking, COD).
+
+Order Tracking – Track order status (processing, shipped, delivered).
+
+Review & Rating – Submit feedback on purchased products.
+
+2. Admin Functions
+
+Product Management – Add, update, or delete product details (name, price, stock).
+
+User Management – Manage customer accounts and access rights.
+
+Order Management – View and update customer orders, shipping details, and returns.
+
+Report Generation – Sales reports, stock reports, and customer purchase history.
+
+3. System Functions
+
+Authentication & Authorization – Ensure secure login for users and admins.
+
+Database Management – Store and retrieve product, user, and transaction details.
+
+Notification System – Send confirmation emails/SMS for orders, payments, and delivery.
+
+Security Features – Protect sensitive data like passwords and payment information.

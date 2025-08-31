@@ -1,0 +1,28 @@
+Case: Critical Maintenance of WhatsApp (2019 Global Outage)
+Background
+
+WhatsApp, one of the world’s most widely used messaging applications, experienced a major outage in July 2019, where users across multiple countries could not send or receive images, videos, and voice messages.
+
+Issue
+
+The outage was caused by server-side failures and technical bugs in the media storage and delivery system.
+
+Normal text messages worked, but multimedia content failed, affecting millions of users worldwide.
+
+Critical Maintenance Actions
+
+Immediate Bug Fixes – Engineers identified and patched the server bug causing media delivery failures.
+
+System Monitoring – Real-time monitoring tools were enhanced to detect similar failures quickly.
+
+Infrastructure Upgrade – Backend servers and load balancers were optimized to handle high traffic.
+
+Communication to Users – Status updates were shared via Twitter and other platforms to inform users.
+
+Outcome
+
+The app was restored within hours.
+
+Enhanced monitoring and infrastructure upgrades reduced the likelihood of similar large-scale failures.
+
+The incident highlighted the importance of continuous maintenance and monitoring for high-demand applications.

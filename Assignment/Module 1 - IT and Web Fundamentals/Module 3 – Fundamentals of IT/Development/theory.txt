@@ -1,0 +1,37 @@
+Key Differences Between Web and Desktop Applications
+
+Installation
+
+Web Applications: Run in a web browser; no installation needed.
+
+Desktop Applications: Must be installed on the user’s computer.
+
+Accessibility
+
+Web Applications: Accessible from anywhere with internet and a browser.
+
+Desktop Applications: Accessible only on the specific device where installed.
+
+Updates
+
+Web Applications: Updated centrally on the server; users get the latest version instantly.
+
+Desktop Applications: Require manual updates or re-installation on each device.
+
+Performance
+
+Web Applications: May depend on internet speed and server performance.
+
+Desktop Applications: Often faster and more powerful since they run directly on local hardware.
+
+Storage
+
+Web Applications: Data usually stored on remote servers (cloud).
+
+Desktop Applications: Data stored locally on the user’s computer.
+
+Platform Dependency
+
+Web Applications: Generally platform-independent; work on any OS with a browser.
+
+Desktop Applications: Platform-dependent; different versions needed for Windows, Mac, or Linux.

@@ -1,0 +1,14 @@
+What is a Browser ? How do they work ?
+
+A browser is a software application (like Chrome, Firefox, Edge, Safari) that allows users to access and interact with websites on the internet.
+
+
+How browsers work:
+User Input – You type a URL or click a link.
+DNS Resolution – The browser finds the server’s IP address using the domain name.
+HTTP/HTTPS Request – Browser sends a request to the web server.
+Server Response – The server responds with data (HTML, CSS, JavaScript, images, etc.).
+Rendering – The browser processes the data, interprets code, applies styles, and executes scripts.
+Display – Finally, it shows the webpage to the user.
+
+In short: Browsers are interpreters that convert web code into something human-friendly (text, images, videos, etc.).

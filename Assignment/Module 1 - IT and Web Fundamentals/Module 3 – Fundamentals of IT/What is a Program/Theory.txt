@@ -1,0 +1,65 @@
+What is a Program ?
+
+A program is a set of instructions written by humans using a programming language (like C, Java, Python, etc.) 
+that tells a computer what to do.
+
+How does a Program Function ?
+
+1. Write the Program → 
+
+A programmer writes instructions in a programming language.
+Example: print("Hello World")
+
+2. Translate the Program →
+
+Some languages are compiled (like C, Java) → The code is converted into machine code.
+Some are interpreted (like Python) → The interpreter reads and runs the code line by line.
+
+3. Execution → The computer’s CPU follows the instructions step by step.
+
+4. Output → The program produces results (like showing text, calculating numbers, controlling hardware, etc.).
+
+Example of How it Works ;
+
+public class AddNumbers {
+    public static void main(String[] args) {
+        int a = 5;          
+        int b = 10;         
+        int sum = a + b;    
+        System.out.println(sum); 
+    }
+}
+
+Step-by-Step How it Works
+
+public class AddNumbers { ... }
+
+Defines a class named AddNumbers.
+
+In Java, all code must be inside a class.
+
+public static void main(String[] args)
+
+This is the entry point of the program.
+
+The JVM (Java Virtual Machine) starts executing from here.
+
+int a = 5;
+
+A variable named a is created and assigned the value 5.
+
+int b = 10;
+
+Another variable b is created and assigned the value 10.
+
+int sum = a + b;
+
+The computer adds the values of a and b (5 + 10).
+
+The result (15) is stored in a new variable sum.
+
+System.out.println(sum);
+
+The value stored in sum (which is 15) is printed on the screen.
+
+Output : 15

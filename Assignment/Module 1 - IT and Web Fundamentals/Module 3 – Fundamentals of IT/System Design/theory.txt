@@ -1,0 +1,17 @@
+Key Elements of System Design
+
+Architecture Design – Defines the overall structure of the system, including client-server setup, modules, and data flow.
+
+Data Design – Specifies how data will be stored, organized, and accessed using databases or files.
+
+Interface Design – Focuses on user interfaces (UI) and system interfaces that ensure smooth interaction.
+
+Component Design – Breaks the system into smaller modules or components with clear responsibilities.
+
+Security Design – Ensures authentication, authorization, and protection of sensitive data.
+
+Performance Design – Considers speed, scalability, and resource optimization for efficiency.
+
+Reliability and Fault Tolerance – Plans for error handling, backup, and recovery mechanisms.
+
+Integration Design – Defines how different modules, external systems, or third-party services will connect.

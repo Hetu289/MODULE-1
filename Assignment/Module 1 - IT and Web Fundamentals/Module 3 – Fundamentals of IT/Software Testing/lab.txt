@@ -1,0 +1,66 @@
+Test Cases for Calculator Program
+1. Addition
+
+Input: 5 + 3
+
+Expected Output: 8
+
+Input: -2 + (-6)
+
+Expected Output: -8
+
+Input: 1000 + 0
+
+Expected Output: 1000
+
+2. Subtraction
+
+Input: 10 – 4
+
+Expected Output: 6
+
+Input: -5 – (-3)
+
+Expected Output: -2
+
+Input: 7 – 15
+
+Expected Output: -8
+
+3. Multiplication
+
+Input: 6 × 4
+
+Expected Output: 24
+
+Input: -7 × 3
+
+Expected Output: -21
+
+Input: 9 × 0
+
+Expected Output: 0
+
+4. Division
+
+Input: 20 ÷ 5
+
+Expected Output: 4
+
+Input: -15 ÷ 3
+
+Expected Output: -5
+
+Input: 7 ÷ 0
+
+Expected Output: Error (Division by zero not allowed)
+
+5. Edge / Special Cases
+
+Input: Very large numbers (e.g., 9999999 × 9999999)
+
+Expected Output: Correct result or overflow handling.
+
+Input: Decimal numbers (e.g., 7.5 + 2.3)
+
+Expected Output: 9.8

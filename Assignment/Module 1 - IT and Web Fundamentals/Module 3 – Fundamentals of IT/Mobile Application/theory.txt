@@ -1,0 +1,37 @@
+Differences Between Native and Hybrid Mobile Apps
+
+Platform Dependency
+
+Native Apps: Built specifically for one platform (Android or iOS) using platform-specific languages (Java/Kotlin for Android, Swift/Objective-C for iOS).
+
+Hybrid Apps: Built using web technologies (HTML, CSS, JavaScript) and run inside a native container, so they can work on multiple platforms.
+
+Performance
+
+Native Apps: Faster and more responsive since they directly use device hardware and APIs.
+
+Hybrid Apps: Slightly slower due to reliance on a web view or bridge between code and device.
+
+User Experience (UX/UI)
+
+Native Apps: Provide a better, platform-optimized user experience.
+
+Hybrid Apps: May feel less smooth compared to native, though modern frameworks have improved this.
+
+Development Time & Cost
+
+Native Apps: Require separate development for Android and iOS, leading to more time and higher cost.
+
+Hybrid Apps: One codebase works on multiple platforms, saving time and cost.
+
+Access to Device Features
+
+Native Apps: Full access to device features (camera, GPS, sensors, notifications).
+
+Hybrid Apps: Limited or indirect access; may need plugins or APIs.
+
+Updates & Maintenance
+
+Native Apps: Updates must be done separately for each platform.
+
+Hybrid Apps: Easier to maintain since changes can be applied to one codebase.
