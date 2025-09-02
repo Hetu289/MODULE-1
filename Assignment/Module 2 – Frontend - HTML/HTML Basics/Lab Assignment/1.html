@@ -3,103 +3,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diwali Celebration</title>
+    <title>Holi Celebration</title>
     <style>
+        /* ===== GLOBAL STYLE ===== */
         body {
-            font-family: 'Arial', sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background: #fff8dc; /* light festive background */
+            background: linear-gradient(135deg, #fff0f5, #ffe6cc, #e6f7ff);
+            animation: bgShift 12s infinite alternate;
             color: #333;
         }
 
+        @keyframes bgShift {
+            0% { background: linear-gradient(135deg, #fff0f5, #ffe6cc, #e6f7ff); }
+            50% { background: linear-gradient(135deg, #ffe6ff, #ffffcc, #e6ffe6); }
+            100% { background: linear-gradient(135deg, #f2e6ff, #ffe6f0, #e6faff); }
+        }
+
         header {
-            background-color: #ffb400;
-            color: white;
-            padding: 20px;
+            background: linear-gradient(90deg, #ff4da6, #ff9933, #33cc33, #3399ff);
+            padding: 30px;
             text-align: center;
-            font-size: 28px;
+            font-size: 38px;
             font-weight: bold;
+            color: white;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.4);
+            letter-spacing: 2px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+            border-bottom: 5px solid #fff;
+            border-radius: 0 0 20px 20px;
         }
 
         main {
-            padding: 20px;
-            line-height: 1.6;
+            padding: 40px;
+            max-width: 1000px;
+            margin: auto;
         }
 
-        aside {
-            background-color: #fff5e6;
-            padding: 15px;
-            margin-top: 20px;
-            border-left: 5px solid #ffb400;
+        .card {
+            background: white;
+            padding: 25px;
+            margin-bottom: 30px;
+            border-radius: 15px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
         }
 
-        footer {
-            background-color: #ffb400;
-            color: white;
-            text-align: center;
-            padding: 15px;
-            position: relative;
-            bottom: 0;
-            margin-top: 20px;
+        .card:hover {
+            transform: scale(1.02);
         }
 
         h2 {
-            color: #ff8c00;
+            color: #d63384;
+            border-left: 6px solid #ff66cc;
+            padding-left: 12px;
+            margin-bottom: 15px;
+            font-size: 24px;
+        }
+
+        h3 {
+            color: #ff6600;
+            margin-bottom: 10px;
         }
 
         ol, ul {
-            margin-left: 20px;
+            margin-left: 30px;
+            padding: 10px;
+        }
+
+        li {
+            margin-bottom: 10px;
+            transition: color 0.3s, transform 0.2s;
+        }
+
+        li:hover {
+            color: #ff3399;
+            transform: translateX(5px);
         }
 
         a {
-            color: #ff8c00;
+            color: #cc0077;
             text-decoration: none;
             font-weight: bold;
+            transition: 0.3s;
         }
 
         a:hover {
+            color: #ff3399;
             text-decoration: underline;
         }
 
+        aside {
+            background: linear-gradient(120deg, #ffe6f7, #e6ffe6);
+            padding: 20px;
+            margin: 25px 0;
+            border-left: 8px solid #ff66cc;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            border-radius: 15px;
+        }
+
+        footer {
+            background: linear-gradient(90deg, #ff4da6, #ff9933, #33cc33, #3399ff);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-weight: bold;
+            font-size: 18px;
+            letter-spacing: 1px;
+            border-radius: 20px 20px 0 0;
+            box-shadow: 0 -6px 15px rgba(0,0,0,0.3);
+        }
     </style>
 </head>
 <body>
 
     <header>
-        🪔 Diwali Celebration 🪔
+        🌸🌈 Holi Celebration 2025 🎉🌸
     </header>
 
     <main>
-        <p>Diwali, also known as the Festival of Lights, is one of the most important Hindu festivals. It symbolizes the victory of light over darkness and good over evil, celebrated with joy and togetherness across India.</p>
+        <div class="card">
+            <p>Holi, also known as the <strong>Festival of Colors</strong>, marks the arrival of spring and the triumph of good over evil. It is one of the most vibrant and joyful festivals celebrated with enthusiasm across India and beyond.</p>
+        </div>
 
-        <h2>Traditional Activities During Diwali</h2>
-        <ol>
-            <li>Lighting diyas and candles</li>
-            <li>Decorating homes with rangoli</li>
-            <li>Performing Lakshmi Puja</li>
-            <li>Exchanging sweets and gifts</li>
-            <li>Fireworks and family gatherings</li>
-        </ol>
+        <div class="card">
+            <h2>🎭 Traditional Activities During Holi</h2>
+            <ol>
+                <li>Throwing colors and water balloons</li>
+                <li>Dancing to festive music</li>
+                <li>Lighting the Holika Dahan bonfire</li>
+                <li>Sharing sweets and festive drinks</li>
+                <li>Strengthening bonds of love and friendship</li>
+            </ol>
+        </div>
 
-        <h2>Popular Foods</h2>
-        <ul>
-            <li>Kaju Katli</li>
-            <li>Laddoos and Barfis</li>
-            <li>Chakli and Namkeen</li>
-            <li>Samosa and festive snacks</li>
-        </ul>
+        <div class="card">
+            <h2>🍴 Popular Foods</h2>
+            <ul>
+                <li>Gujiya (sweet dumplings)</li>
+                <li>Thandai (spiced milk with nuts)</li>
+                <li>Puran Poli</li>
+                <li>Dahi Bhalla and festive snacks</li>
+            </ul>
+            <p>Learn more about Holi at 
+                <a href="https://en.wikipedia.org/wiki/Holi" target="_blank">Wikipedia</a>.
+            </p>
+        </div>
 
-        <p>Learn more about Diwali celebrations at <a href="https://en.wikipedia.org/wiki/Diwali" target="_blank">Wikipedia</a>.</p>
+        <aside>
+            <h3>🌟 Fun Fact</h3>
+            <p>Holi is celebrated not just in India but also in Nepal, Bangladesh, the USA, and many other countries where communities gather to spread joy, love, and vibrant colors.</p>
+        </aside>
     </main>
 
-    <aside>
-        <h3>Fun Fact</h3>
-        <p>Diwali is celebrated not only in India but also in countries like Nepal, Sri Lanka, Singapore, and Fiji, bringing people of different cultures together.</p>
-    </aside>
-
     <footer>
-        &copy; 2025 Diwali Celebration. All Rights Reserved.
+        &copy; 2025 Holi Celebration 🌈 Spread Love, Joy & Colors 🎉
     </footer>
 
 </body>
