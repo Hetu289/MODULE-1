@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>Hetvi Dance Academy</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+<script src='main.js'></script>
+<style>
+body 
+{
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+box-sizing: border-box;   
+font-family: Arial, sans-serif;
+}
+#header 
+{
+width: 100%;
+height: auto;
+padding: 30px;
+background-color: black; 
+position: fixed !important;  
+color: white;
+font-size: 24px;
+text-align: center;
+font-weight: bold;
+}
+.slider
+{
+width: 100%;
+height: 350px;
+margin: auto;
+background: url('https://images.unsplash.com/photo-1518609878373-06d740f60d8b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDJ8fGRhbmNlfGVufDB8fHx8MTY5Njk0OTc4OQ&ixlib=rb-4.0.3&q=80&w=1080') no-repeat;
+background-size: cover;
+background-position: center;   
+padding: 45px; 
+}
+.slider-txt
+{
+background: rgba(255,255,255,0.85);
+width: 50%;
+height: auto;
+margin: auto;
+padding: 45px;    
+margin-left: 15%;
+margin-top: 5%;
+border-radius: 10px;
+}
+.slider-txt button
+{
+width: 150px;
+height: auto;
+padding: 10px;
+border: none;
+background-color: #ff4500;
+color: white;
+cursor: pointer;
+font-weight: bold;
+}
+.content 
+{
+width: 80%;
+height: auto;
+margin: auto;
+padding: 45px;
+margin-top: 5%;    
+}
+.content h1 
+{
+text-align: center;
+text-decoration: underline;
+text-transform: uppercase;
+text-shadow: 2px 1px #ff4500;    
+}
+.txt-offer
+{
+ text-decoration: line-through;
+ font-size: 20px;
+ font-weight: 800;
+ font-style: italic;
+ font-family: cursive;
+ color: red;
+}
+
+input[type="text"]
+{
+width: 250px;
+height: auto;
+padding: 10px;   
+margin-top: 5%; 
+border: 2px solid #ccc;
+border-radius: 5px;
+}
+
+::placeholder
+{
+color: #ff4500;
+font-size: 16px;    
+}
+</style>
+</head>
+<body>
+
+<header id="header">Hetvi Dance Academy</header>    
+
+<div class="slider">
+<div class="slider-txt">
+<h1>Enroll Now: 20% Off on Navratri Dance Pass!</h1>
+<p>Join Hetvi Dance Academy this Navratri and learn the best Garba & Dandiya moves with fun and energy. Limited seats available!</p>
+<p>Rs.300/- <span class="txt-offer">800/-</span></p>
+<button type="button">Read More >></button>
+</div>
+</div>
+
+<div class="content">
+<h1>Hetvi Dance Academy Special Offer</h1>
+<p>Experience professional dance training with Hetvi. Our classes are perfect for beginners, kids, and adults. Sign up now and be part of our energetic community this festive season.</p>
+<button type="button">Read More >></button>
+
+<!-- Registration form -->
+<form>
+    <input type="text" placeholder="Enter your name" />
+</form>
+
+</div>
+</body>
+</html>

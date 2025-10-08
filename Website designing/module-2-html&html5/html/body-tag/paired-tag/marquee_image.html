@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Our Team - Fashion Studio</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f4;
+    }
+
+    .team-container {
+        width: 80%;
+        margin: 50px auto;
+        text-align: center;
+    }
+
+    .team-container h1 {
+        font-size: 40px;
+        color: #333;
+        margin-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+    .team-container hr {
+        width: 30%;
+        border: 2px solid #f39c12;
+        margin-bottom: 30px;
+    }
+
+    .team-slider {
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    .team-slider img {
+        width: 250px;
+        height: 150px;
+        margin: 0 15px;
+        border-radius: 10px;
+        transition: transform 0.3s;
+    }
+
+    .team-slider img:hover {
+        transform: scale(1.1);
+    }
+
+    @keyframes slide {
+        0% { transform: translateX(100%); }
+        100% { transform: translateX(-100%); }
+    }
+
+    .team-slider-wrapper {
+        display: flex;
+        animation: slide 15s linear infinite;
+    }
+
+</style>
+</head>
+<body>
+
+<div class="team-container">
+    <h1>Our Teams</h1>
+    <hr>
+
+    <div class="team-slider">
+        <div class="team-slider-wrapper">
+            <img src="https://static.vecteezy.com/system/resources/previews/000/439/863/non_2x/vector-users-icon.jpg" alt="Team Member 1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSADCNb2Pjkg0GPJOwfI9Ktfp4EtO6VNMsw6nbkDKEDp2X0pu4AhDVDQiPQBJ-K_Y2gdys&usqp=CAU" alt="Team Member 2">
+            <img src="https://i.pinimg.com/736x/89/90/48/899048ab0cc455154006fdb9676964b3.jpg" alt="Team Member 3">
+            <!-- Repeat images for smooth infinite scroll -->
+            <img src="https://static.vecteezy.com/system/resources/previews/000/439/863/non_2x/vector-users-icon.jpg" alt="Team Member 1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSADCNb2Pjkg0GPJOwfI9Ktfp4EtO6VNMsw6nbkDKEDp2X0pu4AhDVDQiPQBJ-K_Y2gdys&usqp=CAU" alt="Team Member 2">
+            <img src="https://i.pinimg.com/736x/89/90/48/899048ab0cc455154006fdb9676964b3.jpg" alt="Team Member 3">
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

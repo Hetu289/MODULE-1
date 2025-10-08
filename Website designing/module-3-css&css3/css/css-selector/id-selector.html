@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hetvi Makasana - ID Selector</title>
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Verdana', sans-serif;
+    background: linear-gradient(135deg, #ff99cc, #ff66ff);
+}
+
+/* ===== Box Styling ===== */
+#box1, #box2, #box3 {
+    width: 60%;
+    margin: 50px auto;
+    padding: 25px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Unique colors for each ID */
+#box1 {
+    background-color: #ff3399;
+    box-shadow: 0 0 20px #ff3399;
+}
+#box2 {
+    background-color: #ff6600;
+    border-radius: 50px;
+    box-shadow: 0 0 20px #ff6600;
+}
+#box3 {
+    background-color: #6600ff;
+    box-shadow: 0 0 20px #6600ff;
+}
+
+/* Hover Effects */
+#box1:hover, #box2:hover, #box3:hover {
+    transform: scale(1.05) rotate(-1deg);
+    box-shadow: 0 0 40px #fff, 0 0 60px #ff66ff;
+}
+
+#box3 h1 {
+    color: #fff;
+    text-shadow: 2px 2px 10px #000;
+}
+
+h1 {
+    margin-bottom: 15px;
+    font-size: 32px;
+    text-shadow: 1px 1px 5px #000;
+}
+
+ul {
+    list-style-type: lower-greek;
+    padding-left: 20px;
+    text-align: left;
+}
+
+ul li {
+    margin: 10px 0;
+    transition: transform 0.3s, color 0.3s;
+}
+
+ul li:hover {
+    color: #ff00ff;
+    transform: scale(1.05);
+}
+</style>
+</head>
+<body>
+
+<div id="box1">
+    <h1>ID Selector</h1>
+    <ul>
+        <li>ID selector is a type of CSS selector.</li>
+        <li>ID selector is denoted by # symbol.</li>
+        <li>ID selector is unique and cannot be repeated.</li>
+        <li>ID selector provides different styles to HTML elements.</li>
+    </ul>
+</div>
+
+<div id="box2">
+    <h1>ID Selector Example</h1>
+    <ul>
+        <li>ID selector is unique for each element.</li>
+        <li>It is perfect for specific targeting.</li>
+        <li>It overrides class selectors if used.</li>
+        <li>It can style elements individually.</li>
+    </ul>
+</div>
+
+<div id="box3">
+    <h1>ID Selector Fun</h1>
+    <ul>
+        <li>ID selector can make pages look flashy.</li>
+        <li>Combine with hover effects for animations.</li>
+        <li>Great for dance-themed vibrant pages!</li>
+        <li>Each box can have a unique color and effect.</li>
+    </ul>
+</div>
+
+</body>
+</html>

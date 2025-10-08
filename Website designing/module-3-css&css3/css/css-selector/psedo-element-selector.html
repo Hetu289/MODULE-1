@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>Dance Offers</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<style>
+/* ===== Body & Page ===== */
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Cursive', sans-serif;
+    background: linear-gradient(135deg, #ff66cc, #ffccff);
+    color: white;
+}
+
+/* ===== Navbar ===== */
+.navbar {
+    width: 100%;
+    background-color: #111;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul li {
+    padding: 15px 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #ff33cc;
+    transform: scale(1.1);
+}
+
+.navbar ul li::after {
+    content: "|";
+    color: white;
+    position: absolute;
+    right: -15px;
+}
+
+.navbar ul li:last-child::after {
+    content: "";
+}
+
+/* ===== Content Section ===== */
+#content {
+    width: 60%;
+    margin: 40px auto;
+    padding: 30px;
+    background: rgba(0,0,0,0.7);
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 0 25px #ff66cc;
+}
+
+#content h1 {
+    font-size: 36px;
+    color: #ff3399;
+    margin-bottom: 20px;
+    animation: danceMove 2s infinite alternate;
+}
+
+#content p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Pseudo-element for note */
+.app::after {
+    content: "🎉 Note: This dance offer valid till 02/10/2025 🎶";
+    display: block;
+    font-size: 22px;
+    color: yellow;
+    margin-bottom: 20px;
+    animation: glowText 1.5s infinite alternate;
+}
+
+/* ===== List of Days ===== */
+.list-app ul {
+    padding: 0;
+}
+
+.list-app ul li {
+    font-size: 24px;
+    margin: 10px 0;
+    list-style: none;
+    display: inline-block;
+    margin-right: 15px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.list-app ul li::before {
+    content: "💃";
+    margin-right: 8px;
+}
+
+.list-app ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.list-app ul li:hover {
+    color: #ff33cc;
+    transform: scale(1.2) rotate(-5deg);
+}
+
+/* ===== Animations ===== */
+@keyframes danceMove {
+    0% { transform: rotate(0deg); }
+    50% { transform: rotate(3deg); }
+    100% { transform: rotate(-3deg); }
+}
+
+@keyframes glowText {
+    0% { text-shadow: 0 0 5px yellow; }
+    50% { text-shadow: 0 0 20px yellow, 0 0 30px #ff66cc; }
+    100% { text-shadow: 0 0 5px yellow; }
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Feedback</a></li>
+        <li><a href="#">Account</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>    
+
+<!-- Content Section -->
+<section id="content">
+    <h1>50% Off on Dance Courses! Hurry Up</h1>
+    <p>Learn amazing dance moves with our limited-time offer. Join our classes and get 50% discount on selected dance styles!</p>
+    <span class="app"></span>
+
+    <div class="list-app">
+        <ul>
+            <li><a href="#">Day1</a></li>
+            <li><a href="#">Day2</a></li>
+            <li><a href="#">Day3</a></li>
+            <li><a href="#">Day4</a></li>
+            <li><a href="#">Day5</a></li>
+            <li><a href="#">Day6</a></li>
+            <li><a href="#">Day7</a></li>
+            <li><a href="#">Day8</a></li>
+            <li><a href="#">Day9</a></li>
+        </ul>
+    </div>
+</section>
+
+</body>
+</html>

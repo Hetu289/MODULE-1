@@ -1,0 +1,71 @@
+==============================
+        WHAT IS HTML?
+==============================
+
+HTML stands for HyperText Markup Language.
+It was first released in 1986 by Tim Berners-Lee.
+
+HTML is not a programming language — it is a markup language used to define the structure of web pages.
+It interacts directly with web browsers to display text, images, links, and other content.
+
+HTML is a case-insensitive language, which means <p></p> and <P></P> are both valid.
+
+File Extensions:
+.html or .htm
+
+
+==============================
+ BASIC STRUCTURE OF HTML PAGE
+==============================
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="" type="text/css" />
+  <link rel="icon" href="" type="text/x-icon" />
+  <meta charset="utf-8" />
+  <style></style>
+  <script type="text/javascript"></script>
+  <noscript></noscript>
+</head>
+<body>
+
+</body>
+</html>
+
+
+==============================
+        WHAT IS HTML TAG?
+==============================
+
+HTML uses tags to define and organize elements on a webpage.
+Tags are written inside angle brackets <>.
+There are two main types of tags:
+
+
+a) PAIRED TAGS:
+----------------
+These tags come in pairs — an opening tag and a closing tag.
+The closing tag starts with a slash (/).
+They are also called container tags.
+
+Examples:
+<p></p>
+<h1></h1>
+
+
+b) NON-PAIRED TAGS:
+--------------------
+These tags are self-closing and do not require an ending tag.
+They are also called empty tags.
+
+Examples:
+<br>
+<hr>
+<input>
+<img>
+<meta>
+<link>
+
+==============================

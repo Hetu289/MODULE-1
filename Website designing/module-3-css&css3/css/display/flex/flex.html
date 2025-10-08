@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Dance Project Gallery</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/008/311/935/non_2x/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Parent container */
+.parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 40px 20px;
+}
+
+/* Individual box style */
+.box {
+    width: 23%;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+    text-align: center;
+}
+
+/* Hover effect */
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+/* Box content */
+.box h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.box p {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Responsive design */
+@media (max-width: 1200px) {
+    .box {
+        width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .box {
+        width: 90%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="parent">
+
+    <div class="box">
+        <h2>Ballet</h2>
+        <p>Elegant classical dance focusing on posture, grace, and poise.</p>
+    </div>
+
+    <div class="box">
+        <h2>Hip-Hop</h2>
+        <p>Energetic street dance with rhythm and freestyle moves.</p>
+    </div>
+
+    <div class="box">
+        <h2>Salsa</h2>
+        <p>Lively Latin dance with fun footwork and coordination.</p>
+    </div>
+
+    <div class="box">
+        <h2>Jazz</h2>
+        <p>Expressive dance with improvisation, rhythm, and sharp movements.</p>
+    </div>
+
+    <div class="box">
+        <h2>Contemporary</h2>
+        <p>Blends ballet and modern dance for fluid and emotional expression.</p>
+    </div>
+
+    <div class="box">
+        <h2>Tap Dance</h2>
+        <p>Percussive footwork creating rhythm and performance skills.</p>
+    </div>
+
+    <div class="box">
+        <h2>Bollywood</h2>
+        <p>Colorful and energetic dance mixing classical and modern styles.</p>
+    </div>
+
+    <div class="box">
+        <h2>Dance Competition</h2>
+        <p>Showcase your skills, creativity, and teamwork in competitive events.</p>
+    </div>
+
+</div>
+
+</body>
+</html>

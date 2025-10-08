@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>Raksha Bandhan Skills Display</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #FFD700, #FF69B4, #FF4500);
+        margin: 0;
+        padding: 20px;
+        color: #4B0082;
+    }
+    .container {
+        width: 60%;
+        margin: auto;
+        padding: 25px;
+        background-color: rgba(255, 255, 255, 0.9);
+        border-radius: 15px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    }
+    h1 {
+        text-align: center;
+        color: #FF1493;
+        margin-bottom: 20px;
+    }
+    label {
+        font-weight: bold;
+        margin-top: 10px;
+        display: block;
+        color: #FF4500;
+    }
+    meter {
+        width: 100%;
+        height: 25px;
+        border-radius: 10px;
+        background: #eee;
+    }
+    meter::-webkit-meter-bar {
+        background: #eee;
+        border-radius: 10px;
+    }
+    meter::-webkit-meter-optimum-value {
+        background: #FF1493;
+        border-radius: 10px;
+    }
+    meter::-webkit-meter-suboptimum-value {
+        background: #FFA500;
+        border-radius: 10px;
+    }
+    meter::-webkit-meter-even-less-good-value {
+        background: #FF4500;
+        border-radius: 10px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <h1>Our Raksha Bandhan Skills</h1>
+    <hr />
+    
+    <label>Decorative Rakhi Making (80)</label>
+    <meter min="0" max="100" value="80"></meter>
+    
+    <label>Gift Wrapping (70)</label>
+    <meter min="0" max="100" value="70"></meter>
+    
+    <label>Festive Cooking (60)</label>
+    <meter min="0" max="100" value="60"></meter>
+</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Raksha Bandhan Special</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: linear-gradient(135deg, #FFD700, #FF4500, #FF69B4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .container {
+        width: 60%;
+        text-align: center;
+        background: rgba(255, 255, 255, 0.9);
+        padding: 30px;
+        border-radius: 25px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+        border: 3px dotted #FF1493;
+        animation: float 3s ease-in-out infinite;
+    }
+
+    h1 {
+        font-size: 40px;
+        color: #FF1493;
+        text-shadow: 2px 2px 5px #FFA500;
+        margin-bottom: 25px;
+    }
+
+    canvas {
+        width: 200px;
+        height: 200px;
+        background-color: #FF6347;
+        border-radius: 50%;
+        transition: 2s ease all;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    canvas:hover {
+        background-color: #32CD32;
+        transform: scale(1.2) rotate(15deg);
+        border-radius: 50%;
+    }
+
+    blockquote {
+        font-size: 20px;
+        font-style: italic;
+        color: #FF4500;
+        margin: 20px auto;
+        padding: 15px;
+        border-left: 5px solid #FF1493;
+        background: rgba(255, 223, 186, 0.7);
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    q {
+        quotes: "“" "”" "‘" "’";
+    }
+
+    @keyframes float {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-10px); }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎉 Happy Raksha Bandhan 🎉</h1>
+        <blockquote>
+            <q>Brothers protect, sisters love; together they make life colorful!</q>
+        </blockquote>
+        <canvas></canvas>
+        <blockquote>
+            <q>Rakhi is not just a thread, it’s a bond of love that lasts forever.</q>
+        </blockquote>
+    </div>
+</body>
+</html>

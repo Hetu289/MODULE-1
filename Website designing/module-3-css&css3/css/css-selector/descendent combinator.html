@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hetvi Makasana - CSS Combinators Demo</title>
+<style>
+/* ===== Body Styling ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Cursive', sans-serif;
+    background: linear-gradient(135deg, #ff66cc, #ff99ff);
+    color: #fff;
+}
+
+/* ===== Content Styling ===== */
+.content {
+    width: 70%;
+    margin: 40px auto;
+    padding: 25px;
+    background: rgba(0,0,0,0.6);
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(255,0,255,0.5);
+    text-align: center;
+    animation: pulse 3s infinite alternate;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 15px rgba(255,0,255,0.5); }
+    100% { box-shadow: 0 0 40px rgba(255,0,255,0.8); }
+}
+
+/* ===== Paragraph Styling ===== */
+p {
+    width: 80%;
+    margin: 15px auto;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #ffccff;
+    transition: all 0.3s ease;
+}
+
+/* Hover effect for all paragraphs */
+p:hover {
+    color: #ff00ff;
+    transform: scale(1.02);
+    text-shadow: 1px 1px 5px #000;
+}
+
+/* ===== Heading Styling ===== */
+h1 {
+    font-size: 36px;
+    color: #ff3399;
+    text-shadow: 2px 2px 10px #000;
+    margin-top: 20px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+/* Hover effect for heading */
+h1:hover {
+    color: #ff00ff;
+    transform: scale(1.1) rotate(3deg);
+}
+
+/* ===== CSS Combinator Demonstrations ===== */
+
+/* Descendant combinator: all p inside .content */
+.content p {
+    border-left: 4px solid #ff66cc;
+    padding-left: 10px;
+}
+
+/* Child combinator: only direct p children of .content */
+.content > p {
+    border-left: 4px solid #ff3399;
+}
+
+/* Next sibling combinator: p immediately after h1 */
+h1 + p {
+    background: rgba(255,0,255,0.2);
+    padding: 8px;
+    border-radius: 8px;
+}
+
+/* Subsequent sibling combinator: all p after h1 */
+h1 ~ p {
+    font-style: italic;
+    color: #ff99ff;
+}
+</style>
+</head>
+<body>
+
+<p>Intro paragraph outside content box — not affected by combinators inside .content.</p>
+
+<div class="content">
+    <p>Descendant paragraph 1 (inside .content)</p>
+    <p>Descendant paragraph 2 (inside .content)</p>
+    <p>Hetvi Makasana — showing direct child styling</p>
+    <h1>Hi Twinkle — heading example</h1>
+    <p>Next sibling paragraph immediately after h1 (highlighted)</p>
+    <p>Another paragraph after h1 (subsequent sibling styling)</p>
+</div>
+
+<p>Outro paragraph outside content box — independent.</p>
+
+</body>
+</html>

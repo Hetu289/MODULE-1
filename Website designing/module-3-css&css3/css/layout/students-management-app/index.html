@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>Students Management App</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' type='text/css' media='screen' href='css/style.css'>
+<!-- Google Charts -->
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+function drawChart() {
+    var data = google.visualization.arrayToDataTable([
+        ['Status', 'Number of Students'],
+        ['Present', 6],
+        ['Absent', 2]
+    ]);
+
+    var options = {
+        title: 'Daily Attendance',
+        pieHole: 0.4, // optional: makes it a donut chart
+        colors: ['#4caf50', '#f44336'],
+        legend: { position: 'right', alignment: 'center' },
+        chartArea: { width: '80%', height: '80%' }
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+    chart.draw(data, options);
+}
+</script>
+</head>
+<body>
+<section id="main">
+    <div class="header">
+        <h1 style="text-align:center;">Student Attendance Dashboard</h1>
+    </div>
+    <div class="container">
+        <!-- Pie Chart -->
+        <div id="piechart" style="width: 80%; height: 300px; margin: auto;"></div>
+    </div> 
+</section>    
+</body>
+</html>

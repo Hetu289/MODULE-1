@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Dance Project</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Body styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/008/311/935/non_2x/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Parent container */
+.parent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 40px 0;
+}
+
+/* Individual boxes */
+.box {
+    width: 60%;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Box hover effect */
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.5);
+}
+
+/* Paragraph inside boxes */
+.box p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .box {
+        width: 90%;
+        padding: 20px;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="parent">
+    <div class="box">
+        <h2>Ballet</h2>
+        <p>Ballet is a graceful classical dance style, emphasizing posture and poise. Perfect for beginners and advanced dancers alike.</p>
+    </div>
+
+    <div class="box">
+        <h2>Hip-Hop</h2>
+        <p>Hip-Hop is energetic and modern, combining street moves with rhythm and attitude. Great for freestyle expression.</p>
+    </div>
+
+    <div class="box">
+        <h2>Salsa</h2>
+        <p>Salsa is a lively Latin dance for pairs, focusing on rhythm, coordination, and footwork. Ideal for social dance events.</p>
+    </div>
+
+    <div class="box">
+        <h2>Jazz</h2>
+        <p>Jazz dance combines improvisation, rhythm, and sharp movements. Fun and expressive, suitable for stage performances.</p>
+    </div>
+
+    <div class="box">
+        <h2>Contemporary</h2>
+        <p>Contemporary dance blends ballet and modern styles, focusing on fluidity, emotion, and storytelling through movement.</p>
+    </div>
+
+    <div class="box">
+        <h2>Tap Dance</h2>
+        <p>Tap dance emphasizes rhythm with shoes, combining percussive footwork and performance skills. A perfect show-stopping style.</p>
+    </div>
+
+    <div class="box">
+        <h2>Bollywood</h2>
+        <p>Bollywood dance is energetic, colorful, and fun, combining Indian classical and modern styles. Ideal for cultural performances.</p>
+    </div>
+
+    <div class="box">
+        <h2>Dance Competition</h2>
+        <p>Participate in dance competitions to showcase your skills, creativity, and teamwork, gaining experience and recognition.</p>
+    </div>
+</div>
+
+</body>
+</html>

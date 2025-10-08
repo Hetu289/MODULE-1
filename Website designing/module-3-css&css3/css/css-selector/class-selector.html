@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Hetvi Makasana - Class Selector Demo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* ===== Body Styling ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(135deg, #ff66cc, #ff99ff);
+}
+
+/* ===== Box Styling ===== */
+.box1, .box2, .box3 {
+    width: 60%;
+    margin: 40px auto;
+    padding: 25px;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255,255,255,0.3);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Box1: White background with pink text */
+.box1 {
+    background-color: #ffffff;
+    color: #ff3399;
+}
+
+/* Box2: Coral background with neon glow */
+.box2 {
+    background-color: coral;
+    color: #fff;
+    box-shadow: 0 0 15px #ff0066, 0 0 30px #ff66cc;
+}
+
+/* Box3: Blue background with neon glow */
+.box3 {
+    background-color: #1a1aff;
+    color: #fff;
+    box-shadow: 0 0 15px #3399ff, 0 0 30px #66ccff;
+}
+
+/* Hover effect for all boxes */
+.box1:hover, .box2:hover, .box3:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 40px rgba(255,255,255,0.6);
+}
+
+/* Headings */
+h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* List styling */
+ul {
+    list-style-type: square;
+    text-align: left;
+    margin-left: 20px;
+    line-height: 1.6;
+}
+
+/* Font Style class */
+.font-style {
+    font-size: 18px;
+    font-weight: 500;
+}
+</style>
+</head>
+<body>
+
+<div class="box1 font-style">
+    <h1>Hetvi's Dance Tips</h1>
+    <ul>
+        <li>Always feel the rhythm of the music.</li>
+        <li>Practice makes perfect—dance daily!</li>
+        <li>Be confident in your moves and expressions.</li>
+        <li>Wear comfortable outfits to dance freely.</li>
+    </ul>
+</div>
+
+<div class="box2 font-style">
+    <h1>Favorite Dance Styles</h1>
+    <ul>
+        <li>Hip Hop – energetic and fun.</li>
+        <li>Contemporary – expressive and emotional.</li>
+        <li>Jazz – stylish and upbeat.</li>
+        <li>Belly Dance – graceful and fluid movements.</li>
+    </ul>
+</div>
+
+<div class="box3 font-style">
+    <h1>Dance Motivation</h1>
+    <ul>
+        <li>Dance like nobody’s watching.</li>
+        <li>Every step tells a story.</li>
+        <li>Enjoy every beat and rhythm.</li>
+        <li>Hetvi Makasana believes in passion through dance!</li>
+    </ul>
+</div>
+
+</body>
+</html>

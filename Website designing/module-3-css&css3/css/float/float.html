@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Dancer Profile</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+}
+
+/* Profile card */
+.profile {
+    width: 80%;
+    max-width: 700px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+/* Profile image */
+.profile img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    float: left; /* Image floats to the left */
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+/* Profile text */
+.profile h2 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+.profile p {
+    text-align: justify;
+    line-height: 1.6;
+    color: #555;
+}
+
+.profile ul {
+    padding-left: 20px;
+    color: #555;
+}
+
+/* Responsive for small screens */
+@media(max-width:768px) {
+    .profile img {
+        float: none;
+        display: block;
+        margin: 0 auto 20px auto;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="profile">
+    <h2>Aarav Singh</h2>
+    <img src="data:image/png;base64,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" alt="Dancer Photo">
+    <p>
+        Aarav Singh is a professional dancer specializing in contemporary and hip-hop dance styles. He has been performing for over 10 years and has participated in national dance competitions, winning several awards. Aarav’s passion for dance and dedication to his craft makes him an inspiring performer on stage.
+    </p>
+    <p><strong>Dance Style:</strong> Contemporary, Hip-Hop</p>
+    <p><strong>Achievements:</strong></p>
+    <ul>
+        <li>Winner of National Dance Championship 2023</li>
+        <li>Performed at XYZ Dance Festival</li>
+        <li>Certified Dance Trainer</li>
+    </ul>
+</div>
+
+</body>
+</html>

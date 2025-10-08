@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hetvi Makasana - Class Selector</title>
+<style>
+/* ===== Body Styling ===== */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Verdana', sans-serif;
+    background: linear-gradient(135deg, #ff99cc, #ff66ff);
+}
+
+/* ===== Box1 Styling - Class Selector ===== */
+.box1 {
+    width: 60%;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255,0,255,0.5);
+    text-align: center;
+    animation: pulse 3s infinite alternate;
+}
+
+@keyframes pulse {
+    0% { box-shadow: 0 0 15px rgba(255,0,255,0.5); }
+    100% { box-shadow: 0 0 40px rgba(255,0,255,0.8); }
+}
+
+.box1 h1 {
+    color: #ff3399;
+    font-size: 38px;
+    text-shadow: 2px 2px 10px #000;
+}
+
+.box1 ul {
+    list-style-type: lower-latin;
+    padding-left: 20px;
+    text-align: left;
+    color: #333;
+}
+
+.box1 ul li {
+    margin: 10px 0;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.box1 ul li:hover {
+    color: #ff00ff;
+    transform: scale(1.05);
+}
+
+/* ===== Box2 Styling - Headings ===== */
+.box2 {
+    width: 60%;
+    margin: 50px auto;
+    padding: 25px;
+    background-color: coral;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.box2 h1, .box2 h2, .box2 h3, .box2 h4, .box2 h5, .box2 h6 {
+    font-family: cursive;
+    color: #fff;
+    margin: 10px 0;
+    text-shadow: 1px 1px 5px #000;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.box2 h1:hover { color: #ff00ff; transform: scale(1.1); }
+.box2 h2:hover { color: #ff33cc; transform: scale(1.08); }
+.box2 h3:hover { color: #ff66ff; transform: scale(1.06); }
+.box2 h4:hover { color: #ff99ff; transform: scale(1.04); }
+.box2 h5:hover { color: #ffccff; transform: scale(1.02); }
+.box2 h6:hover { color: #ffe6ff; transform: scale(1.01); }
+</style>
+</head>
+<body>
+
+<div class="box1">
+    <h1>Class Selector</h1>
+    <ul>
+        <li>Class selector is a type of CSS selector.</li>
+        <li>Class selector is denoted by a dot (.) symbol.</li>
+        <li>Class selector can be repeated multiple times.</li>
+        <li>Class selectors allow different styles on HTML elements.</li>
+    </ul>
+</div>
+
+<div class="box2">
+    <h1>Heading H1</h1>
+    <h2>Heading H2</h2>
+    <h3>Heading H3</h3>
+    <h4>Heading H4</h4>
+    <h5>Heading H5</h5>
+    <h6>Heading H6</h6>
+</div>
+
+</body>
+</html>

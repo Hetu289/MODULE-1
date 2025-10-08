@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>CSS Selectors Demo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* =========================
+   Universal Selector
+========================= */
+* {
+    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: cursive;
+    background-color: #f0f0f0;
+}
+
+/* =========================
+   Element Selector
+========================= */
+p {
+    color: darkred;
+    font-size: 18px;
+}
+h1, h2, h3 {
+    color: darkblue;
+}
+
+/* =========================
+   Class Selector
+========================= */
+.box {
+    width: 50%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: coral;
+    border-radius: 15px;
+    color: white;
+}
+
+/* =========================
+   ID Selector
+========================= */
+#unique-box {
+    background-color: teal;
+    color: white;
+}
+
+/* =========================
+   Combinators
+========================= */
+.parent p {
+    font-weight: bold;
+    color: purple; /* Descendant */
+}
+.parent > p {
+    color: green; /* Child */
+}
+.sibling + p {
+    color: orange; /* Next sibling */
+}
+.sibling ~ p {
+    color: blue; /* Subsequent siblings */
+}
+
+/* =========================
+   Pseudo-class Selectors
+========================= */
+a:link {
+    color: darkblue;
+    text-decoration: none;
+}
+a:visited {
+    color: purple;
+}
+a:hover {
+    color: red;
+}
+a:active {
+    color: orange;
+}
+input:focus {
+    border: 2px solid blue;
+}
+
+/* =========================
+   Pseudo-elements
+========================= */
+.note::after {
+    content: " ✨ Important!";
+    color: red;
+    font-weight: bold;
+}
+ul li::before {
+    content: "🚩 ";
+}
+
+.navbar {
+    background-color: black;
+    padding: 10px 0;
+    text-align: center;
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+}
+.navbar a:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation -->
+<div class="navbar">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+</div>
+
+<!-- Universal Selector -->
+<div>
+    <h1>Universal Selector Example</h1>
+    <p>This paragraph uses the universal selector styling.</p>
+</div>
+
+<!-- Element Selector -->
+<div>
+    <h1>Element Selector Example</h1>
+    <p>All paragraphs (p) and headings (h1, h2, h3) are styled using element selectors.</p>
+</div>
+
+<!-- Class Selector -->
+<div class="box">
+    <h2>Class Selector Example</h2>
+    <p>This box uses a class selector (.box) for styling.</p>
+</div>
+
+<!-- ID Selector -->
+<div id="unique-box">
+    <h2>ID Selector Example</h2>
+    <p>This box uses a unique ID selector (#unique-box).</p>
+</div>
+
+<!-- Combinators -->
+<div class="parent">
+    <p>Descendant Selector: styled because inside parent</p>
+    <div>
+        <p>Child Selector Example: only direct children are styled</p>
+    </div>
+</div>
+<div class="sibling">
+    <p>Next Sibling Example (orange)</p>
+</div>
+<p>Subsequent Sibling Example (blue)</p>
+<p>Another Subsequent Sibling Example</p>
+
+<!-- Pseudo-class -->
+<h2>Links with Pseudo-classes</h2>
+<a href="#">Link Example</a>
+
+<h2>Input Focus Example</h2>
+<input type="text" placeholder="Focus on me">
+
+<!-- Pseudo-element -->
+<p class="note">This is a note</p>
+
+<ul>
+    <li>List item 1</li>
+    <li>List item 2</li>
+    <li>List item 3</li>
+</ul>
+
+<!-- Form Example -->
+<div class="box">
+    <h2>Form Example</h2>
+    <form>
+        <input type="text" placeholder="Name"><br><br>
+        <input type="email" placeholder="Email"><br><br>
+        <input type="number" placeholder="Phone"><br><br>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+    </form>
+</div>
+
+</body>
+</html>

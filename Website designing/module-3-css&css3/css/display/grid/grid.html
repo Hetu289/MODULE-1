@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Dance Project</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/008/311/935/non_2x/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Dance performance boxes */
+.parent {
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.parent div {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.child1 { background-color: #1abc9c; }  /* turquoise */
+.child2 { background-color: #e67e22; }  /* orange */
+.child3 { background-color: #3498db; }  /* blue */
+
+/* Contact / Info section */
+.parent1 {
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.parent1 div {
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.child4 { background-color: #3498db; color: white; }
+.child5 { background-color: #ffffff; color: #333; }
+
+/* Responsive adjustments */
+@media(max-width: 768px) {
+    .parent, .parent1 {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+<body>
+
+<!-- Dance performance boxes -->
+<div class="parent">
+    <div class="child1">Dance Performance 1</div>
+    <div class="child2">Dance Performance 2</div>
+    <div class="child3">Dance Performance 3</div>
+</div>
+
+<!-- Contact / Info section -->
+<div class="parent1">
+    <div class="child4">
+        <h2>Dance Academy Info</h2>
+        <p>Location: Rajkot, India</p>
+        <p>Phone: +91 98765 43210</p>
+    </div>
+    <div class="child5">
+        <h2>Contact Us</h2>
+        <p>Email: info@danceacademy.com</p>
+        <p>Website: www.danceacademy.com</p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Raksha Bandhan Celebration Form</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #FFD700, #FF69B4, #FF4500);
+            margin: 0;
+            padding: 20px;
+        }
+        form {
+            width: 50%;
+            margin: auto;
+            padding: 25px;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+        h1 {
+            text-align: center;
+            color: #FF1493;
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 15px 0 5px;
+            font-weight: bold;
+            color: #4B0082;
+        }
+        input[type="url"],
+        input[type="email"],
+        input[type="password"],
+        input[type="file"],
+        input[type="date"],
+        input[type="datetime-local"] {
+            width: 100%;
+            padding: 10px;
+            border-radius: 10px;
+            border: 1px solid #FF69B4;
+        }
+        input[type="submit"] {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 10px;
+            background-color: #FF1493;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+        input[type="submit"]:hover {
+            background-color: #FF4500;
+        }
+    </style>
+</head>
+<body>
+    <form action="welcome.html">
+        <h1>Raksha Bandhan Celebration Form</h1>
+
+        <label>Enter Your Website URL</label>
+        <input type="url" placeholder="https://example.com" required />
+
+        <label>Enter Email</label>
+        <input type="email" placeholder="Your Email" required />
+
+        <label>Enter Password</label>
+        <input type="password" placeholder="Password" required />
+
+        <label>Upload Your Photo</label>
+        <input type="file" multiple required />
+
+        <label>Select Date</label>
+        <input type="date" required />
+
+        <label>Appointment Date & Time</label>
+        <input type="datetime-local" required />
+
+        <input type="submit" value="Submit" />
+    </form>
+</body>
+</html>

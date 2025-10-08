@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Dance Project Contact</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('https://static.vecteezy.com/system/resources/previews/008/311/935/non_2x/the-illustration-graphic-consists-of-abstract-background-with-a-blue-gradient-dynamic-shapes-composition-eps10-perfect-for-presentation-background-website-landing-page-wallpaper-vector.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+/* Main container for all contact sections */
+.google-map {
+    width: 90%;
+    margin: 50px auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Address box */
+.address {
+    flex: 1 1 300px;
+    min-width: 280px;
+    background: rgba(255,255,255,0.95);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+/* Google Map box */
+.google {
+    flex: 2 1 500px;
+    min-width: 300px;
+    height: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.google iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Titles */
+.address h2 {
+    margin-top: 0;
+    color: #2c3e50;
+}
+
+/* Responsive adjustments */
+@media(max-width: 768px){
+    .google-map {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .google, .address {
+        flex: 1 1 90%;
+    }
+}
+</style>
+</head>
+<body>
+
+<div class="google-map">
+    <div class="address">
+        <h2>Contact Us - Branch 1</h2>
+        <p>
+            <strong>Company Name:</strong> Dance Academy A<br>
+            <strong>Address:</strong> 123 Main Street, Suite 456,<br>
+            New Delhi, Delhi 110001, India<br>
+            <strong>Phone:</strong> +91 98765 43210<br>
+            <strong>Email:</strong> info@danceacademy.com
+        </p>
+    </div>
+
+    <div class="google">
+        <iframe src="https://www.google.com/maps?q=Rajkot,India&output=embed" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="google">
+        <iframe src="https://www.google.com/maps?q=Ahmedabad,India&output=embed" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+
+    <div class="address">
+        <h2>Contact Us - Branch 2</h2>
+        <p>
+            <strong>Company Name:</strong> Dance Academy B<br>
+            <strong>Address:</strong> 456 Dance Street, Suite 789,<br>
+            Ahmedabad, Gujarat 380001, India<br>
+            <strong>Phone:</strong> +91 98765 98765<br>
+            <strong>Email:</strong> contact@danceacademy.com
+        </p>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Adjacent Sibling Combinator</title>
+<style>
+body {
+    font-family: 'Cursive', sans-serif;
+    background: linear-gradient(120deg, #ff66cc, #ff99ff);
+    margin: 0;
+    padding: 20px;
+}
+
+/* Adjacent sibling combinator */
+.content + p {
+    width: 60%;
+    margin: 20px auto;
+    padding: 15px;
+    background: #ff33cc;
+    color: white;
+    font-size: 18px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 0 15px #ff66ff;
+    transform: rotate(-1deg);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.content + p:hover {
+    transform: scale(1.05) rotate(1deg);
+    box-shadow: 0 0 25px #fff, 0 0 40px #ff33cc;
+}
+
+/* Styling content div */
+.content {
+    width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255,255,255,0.8);
+    border-radius: 20px;
+    text-align: center;
+}
+
+.content p {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #ff3399;
+}
+
+/* Heading style */
+.content h1 {
+    color: #ff0066;
+    text-shadow: 2px 2px 5px #000;
+}
+</style>
+</head>
+<body>
+
+<p>Paragraph 1</p>
+
+<div class="content">
+    <p>Paragraph 2</p>
+    <p>Paragraph 3</p>
+    <p>Hetvi Patel</p>
+    <h1>Great Learning</h1>
+</div>
+
+<p>Paragraph 3</p>
+<p>Paragraph 4</p>
+<p>Paragraph 5</p>
+
+</body>
+</html>

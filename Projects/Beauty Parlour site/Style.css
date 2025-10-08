@@ -1,0 +1,148 @@
+/* Reset */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', sans-serif; color: #333; background: #fff; scroll-behavior: smooth; }
+
+/* Header */
+header {
+  background: #ff5da2;
+  color: white;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  animation: slide-down 1s ease;
+}
+header .logo { font-size: 22px; font-weight: bold; }
+nav ul { list-style: none; display: flex; gap: 20px; }
+nav a { color: white; text-decoration: none; font-weight: 500; transition: 0.3s; }
+nav a:hover { color: #ffdfef; }
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url('banner.jpg') center/cover;
+  color: white;
+}
+.hero h1 { font-size: 48px; margin-bottom: 10px; }
+.hero p { font-size: 20px; margin-bottom: 20px; }
+.btn {
+  background: #ff5da2;
+  padding: 12px 25px;
+  border-radius: 25px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.btn:hover { background: #ff3382; }
+
+/* Sections */
+section { padding: 60px 20px; text-align: center; }
+h2 { margin-bottom: 20px; color: #ff5da2; }
+
+/* Services */
+.service-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.card {
+  background: #fff0f6;
+  padding: 30px;
+  border-radius: 15px;
+  width: 200px;
+  font-size: 18px;
+  transition: 0.3s;
+  transform: scale(1);
+}
+.card:hover {
+  background: #ff5da2;
+  color: white;
+  transform: scale(1.1);
+}
+
+/* Gallery */
+.gallery .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+  gap: 15px;
+}
+.img-box {
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+.img-box img {
+  width: 100%;
+  display: block;
+  transition: transform 0.5s;
+}
+.img-box:hover img { transform: scale(1.2); }
+
+/* Contact */
+.contact form {
+  max-width: 500px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.contact input, .contact textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.contact input:focus, .contact textarea:focus {
+  border-color: #ff5da2;
+  box-shadow: 0 0 8px #ffb4d7;
+}
+.contact button {
+  background: #ff5da2;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.contact button:hover { background: #ff3382; transform: scale(1.05); }
+
+/* Footer */
+footer { text-align: center; padding: 15px; background: #333; color: white; }
+
+/* Animations */
+@keyframes slide-down {
+  from { transform: translateY(-100%); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.fade-up {
+  opacity: 0;
+  animation: fade-up 1.5s forwards;
+}
+.fade-up.delay { animation-delay: 0.5s; }
+@keyframes fade-up {
+  from { transform: translateY(30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.pulse {
+  animation: pulse 2s infinite;
+}
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(255,93,162,0.6); }
+  70% { box-shadow: 0 0 0 20px rgba(255,93,162,0); }
+  100% { box-shadow: 0 0 0 0 rgba(255,93,162,0); }
+}
+.fade-section {
+  opacity: 0;
+  animation: fade-section 1.5s forwards;
+}
+@keyframes fade-section {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}

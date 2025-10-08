@@ -1,0 +1,28 @@
+body {
+    background-color: #2c3e50; /* Dark stylish background */
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Heading */
+h1 {
+    text-align: center;
+    font-size: 60px;        /* Bigger for elegance */
+    color: #f39c12;         /* Stylish gold color */
+    text-transform: uppercase; 
+    margin-top: 50px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+/* Paragraphs */
+p {
+    text-align: center;
+    font-size: 22px;
+    color: #ecf0f1;         /* Soft white for readability */
+    line-height: 1.6;
+    max-width: 800px;       /* Better text width */
+    margin: 20px auto;
+    text-transform: capitalize;
+}

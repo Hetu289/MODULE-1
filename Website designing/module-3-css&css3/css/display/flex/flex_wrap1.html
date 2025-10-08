@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Dance Project</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Body and background */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url('https://images.unsplash.com/photo-1605902711622-cfb43c44344f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDF8fGRhbmNlfGVufDB8fHx8MTY5Njk0MjY1NA&ixlib=rb-4.0.3&q=80&w=1080');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff;
+}
+
+/* Heading */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 40px;
+    text-shadow: 2px 2px 5px #000;
+}
+
+/* Parent containers */
+.parent, .parent1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 40px auto;
+    width: 95%;
+}
+
+/* Boxes styling */
+.box1, .box3 {
+    flex: 1 1 25%;
+    min-width: 250px;
+    background: rgba(255, 69, 0, 0.85); /* Orange-red */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.box2, .box4 {
+    flex: 1 1 60%;
+    min-width: 300px;
+    background: rgba(30, 144, 255, 0.85); /* Dodger Blue */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effects */
+.box1:hover, .box2:hover, .box3:hover, .box4:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* Paragraph inside boxes */
+.box1 p, .box2 p, .box3 p, .box4 p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Images inside boxes (optional) */
+.box1 img, .box2 img, .box3 img, .box4 img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 900px) {
+    .box1, .box2, .box3, .box4 {
+        flex: 1 1 90%;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<h1>Dance Project Showcase</h1>
+
+<!-- First parent container: Dance Styles -->
+<div class="parent">
+    <div class="box1">
+        <h2>Ballet</h2>
+        <p>Ballet is a graceful and classical dance form originating from the courts of Italy and France.</p>
+        <img src="https://images.unsplash.com/photo-1595254866713-9b626e49a61f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDN8fGJhbGxldHxlbnwwfHx8fDE2OTY5NDMwNzc&ixlib=rb-4.0.3&q=80&w=400" alt="Ballet">
+    </div>
+    <div class="box2">
+        <h2>Hip-Hop</h2>
+        <p>Hip-Hop dance is energetic and modern, combining street dance moves with urban music rhythms.</p>
+        <img src="https://images.unsplash.com/photo-1606813900713-ec6b10b6a4d8?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDJ8fGhpcC1ob3B8ZW58MHx8fHwxNjk2OTQzMTE2&ixlib=rb-4.0.3&q=80&w=400" alt="Hip-Hop">
+    </div>
+</div>
+
+<!-- Second parent container: Dance Events -->
+<div class="parent1">
+    <div class="box3">
+        <h2>Salsa</h2>
+        <p>Salsa is a lively Latin dance, perfect for pairs, emphasizing rhythm and coordination.</p>
+        <img src="https://images.unsplash.com/photo-1599058917210-d52a1d43e9c0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDd8fHNhbHNhfGVufDB8fHx8MTY5Njk0MzE1Mg&ixlib=rb-4.0.3&q=80&w=400" alt="Salsa">
+    </div>
+    <div class="box4">
+        <h2>Dance Competition</h2>
+        <p>Participate in regional and national dance competitions to showcase your skills and creativity.</p>
+        <img src="https://images.unsplash.com/photo-1603161270287-cd1b1dc2280b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDZ8fGRhbmNlJTIwY29tcGV0aXRpb258ZW58MHx8fHwxNjk2OTQzMTc3&ixlib=rb-4.0.3&q=80&w=400" alt="Dance Competition">
+    </div>
+</div>
+
+</body>
+</html>

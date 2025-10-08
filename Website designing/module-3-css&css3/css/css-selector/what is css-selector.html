@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>CSS Selectors Project</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 5px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Element Selector */
+p {
+    color: darkblue;
+    font-size: 18px;
+}
+
+/* ID Selector */
+#unique-box {
+    width: 50%;
+    margin: auto;
+    background-color: coral;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* Class Selector */
+.box {
+    width: 50%;
+    margin: auto;
+    background-color: lightgreen;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+/* Grouping Selector */
+h1, h2 {
+    color: darkred;
+    text-align: center;
+}
+
+/* Pseudo-element Selector */
+.box::before {
+    content: "⭐ ";
+}
+
+/* Pseudo-class Selector */
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+
+/* Combinator Selectors */
+/* Descendant */
+div p {
+    color: darkgreen;
+}
+/* Child */
+div > p {
+    font-weight: bold;
+}
+/* Adjacent sibling */
+h2 + p {
+    font-style: italic;
+}
+/* General sibling */
+h2 ~ p {
+    color: purple;
+}
+
+/* Attribute Selector */
+input[type="text"] {
+    padding: 8px;
+    margin-top: 5px;
+    width: 90%;
+}
+
+/* Additional styling */
+ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+</style>
+</head>
+<body>
+
+<!-- Project Explanation -->
+<!-- 
+CSS Selectors:
+  a) Universal Selector (*)
+  b) Element Selector
+  c) ID Selector
+  d) Class Selector
+  e) Grouping Selector
+  f) Pseudo-element Selector (::before, ::after)
+  g) Pseudo-class Selector (:hover, :active, :focus)
+  h) Combinator Selector ( , >, +, ~ )
+  i) Attribute Selector ([type="text"])
+-->
+
+<h1>CSS Selectors Project</h1>
+
+<!-- ID Selector Example -->
+<div id="unique-box">
+    <h2>ID Selector Example</h2>
+    <p>This box is selected using an ID selector (#unique-box).</p>
+</div>
+
+<!-- Class Selector Example -->
+<div class="box">
+    <h2>Class Selector Example</h2>
+    <p>This box is selected using a class selector (.box).</p>
+</div>
+
+<!-- Grouping Selector Example -->
+<h1>Grouping Selector Example</h1>
+<h2>Grouping Selector Example</h2>
+<p>Both h1 and h2 are styled together using grouping selector.</p>
+
+<!-- Pseudo-class Example -->
+<a href="#">Hover over this link</a>
+
+<!-- Pseudo-element Example -->
+<div class="box">
+    <p>Pseudo-element adds content before this paragraph using ::before.</p>
+</div>
+
+<!-- Combinator Selectors Example -->
+<div>
+    <p>Descendant Selector Example (div p)</p>
+    <p>Child Selector Example (div > p)</p>
+</div>
+
+<h2>Adjacent Sibling Example</h2>
+<p>Paragraph next to h2 (h2 + p)</p>
+
+<h2>General Sibling Example</h2>
+<p>Paragraph following h2 (h2 ~ p)</p>
+
+<!-- Attribute Selector Example -->
+<form>
+    <input type="text" placeholder="Enter your name">
+    <input type="email" placeholder="Enter your email">
+    <input type="submit" value="Submit">
+</form>
+
+<!-- List Example -->
+<ul>
+    <li>Universal Selector (*)</li>
+    <li>Element Selector (p, h1)</li>
+    <li>ID Selector (#unique-box)</li>
+    <li>Class Selector (.box)</li>
+    <li>Grouping Selector (h1, h2)</li>
+    <li>Pseudo-element (::before)</li>
+    <li>Pseudo-class (:hover)</li>
+    <li>Combinator Selector ( , >, +, ~ )</li>
+    <li>Attribute Selector ([type="text"])</li>
+</ul>
+
+</body>
+</html>

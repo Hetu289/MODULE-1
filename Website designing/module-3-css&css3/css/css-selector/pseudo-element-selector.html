@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Contact Form</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+    margin: 0;
+    padding: 0;
+    background-color: pink;
+    font-family: Arial, sans-serif;
+}
+
+.app {
+    width: 35%;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: black;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="number"], 
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+input[type="submit"], 
+input[type="reset"] {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+input[type="submit"] {
+    background-color: blue;
+}
+
+input[type="reset"] {
+    background-color: red;
+    float: right;
+}
+</style>
+</head>
+<body>
+
+<div class="app">
+    <h1>Contact Form</h1>
+    <form>
+        <input type="text" name="name" placeholder="Name *" required>
+        <input type="email" name="email" placeholder="Email *" required>
+        <input type="number" name="phone" placeholder="Phone *" required>
+        <input type="date" name="dob" placeholder="Date of Birth" required>
+        <input type="submit" value="Send">
+        <input type="reset" value="Reset">
+    </form>
+</div>
+
+</body>
+</html>

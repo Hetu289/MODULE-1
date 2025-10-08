@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>CSS Pseudo-Class Demo</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<style>
+/* ===== Body Styling ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f0f0f0;
+}
+
+/* ===== Navbar Styling ===== */
+.navbar {
+    background-color: #111;
+    padding: 10px 0;
+}
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.navbar ul li {
+    margin: 0 15px;
+}
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+/* ===== Pseudo-class Demonstration ===== */
+.navbar ul li a:link {
+    color: #00ccff; /* unvisited link */
+}
+.navbar ul li a:visited {
+    color: #ff3399; /* visited link */
+}
+.navbar ul li a:hover {
+    color: #ffcc00; /* hover effect */
+    text-decoration: underline;
+}
+.navbar ul li a:active {
+    color: #ff0000; /* active when clicked */
+}
+
+/* ===== Content Styling ===== */
+.content {
+    width: 60%;
+    margin: 50px auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.content h1 {
+    color: #333;
+}
+
+.content p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Input focus demonstration */
+input[type="text"] {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    width: 250px;
+    margin-bottom: 10px;
+}
+input[type="text"]:focus {
+    border-color: #ff66cc;
+    background-color: #fff0f5;
+    outline: none;
+}
+input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    background-color: #00ccff;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+input[type="submit"]:hover {
+    background-color: #ff66cc;
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar">
+    <ul>
+        <li><a href="pseudo_class_selector.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="content">
+    <h1>CSS Pseudo-Class Selector</h1>
+    <p>This paragraph demonstrates a hover effect using <code>:hover</code>.</p>
+    <a href="#">This is a link. Click to visit.</a>
+    <form>
+        <br><br>
+        <input type="text" placeholder="Focus on me">
+        <br><br>
+        <input type="submit" value="Submit">
+    </form>
+</section>
+
+</body>
+</html>
