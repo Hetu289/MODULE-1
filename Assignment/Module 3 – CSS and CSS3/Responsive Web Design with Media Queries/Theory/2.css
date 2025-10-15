@@ -1,0 +1,13 @@
+Question 2: Write a basic media query that adjusts the font size of a webpage for screens smaller than 600px
+
+/* Default font size */
+body {
+    font-size: 18px;
+}
+
+/* Media query for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 14px;
+    }
+}

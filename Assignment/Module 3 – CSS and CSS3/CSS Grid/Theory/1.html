@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Grid</title>
+  <style>
+    /* General Styling */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f5f7fa;
+      padding: 40px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 32px;
+      color: #333;
+    }
+
+    /* Grid Container */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px; /* grid-gap */
+    }
+
+    /* Product Card */
+    .product-card {
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      text-align: center;
+      cursor: pointer;
+    }
+
+    .product-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    }
+
+    /* Product Image */
+    .product-card img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    /* Product Info */
+    .product-info {
+      padding: 20px;
+    }
+
+    .product-info h3 {
+      margin-bottom: 10px;
+      color: #333;
+      font-size: 20px;
+    }
+
+    .product-info p {
+      color: #ff4d6d;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 992px) {
+      .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 600px) {
+      .grid-container {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Our Products</h1>
+
+  <div class="grid-container">
+    <div class="product-card">
+      <img src="https://sp.yimg.com/ib/th?id=OPAC.yErdaq7S7HH9pw474C474&o=5&pid=21.1&w=160&h=105" alt="Product 1">
+      <div class="product-info">
+        <h3>Stylish Sneakers</h3>
+        <p>$79.99</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://tse3.mm.bing.net/th/id/OIF.8FAfMThZi3d88DEGABbOog?pid=Api&P=0&h=180" alt="Product 2">
+      <div class="product-info">
+        <h3>Leather Handbag</h3>
+        <p>$120.00</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.PncNKbw-hKrwrNbFw2x3PAHaE3?pid=Api&P=0&h=180" alt="Product 3">
+      <div class="product-info">
+        <h3>Classic Watch</h3>
+        <p>$199.99</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://tse3.mm.bing.net/th/id/OIP.Ppo0xR3reVb6aScGzQNNCgHaHa?pid=Api&P=0&h=180" alt="Product 4">
+      <div class="product-info">
+        <h3>Wireless Headphones</h3>
+        <p>$89.99</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://tse2.mm.bing.net/th/id/OIP.3fJdgd7HnJb5xackCkwxJgHaHa?pid=Api&P=0&h=180" alt="Product 5">
+      <div class="product-info">
+        <h3>Casual Jacket</h3>
+        <p>$99.99</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://images.unsplash.com/photo-1514996937319-344454492b37?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&w=400&q=80" alt="Product 6">
+      <div class="product-info">
+        <h3>Elegant Sunglasses</h3>
+        <p>$59.99</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.qTh6wGrFsDiZFU6WA2vkRwHaEK?pid=Api&P=0&h=180" alt="Product 7">
+      <div class="product-info">
+        <h3>Fitness Tracker</h3>
+        <p>$49.99</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://tse4.mm.bing.net/th/id/OIP.2A8QzFsTbDp1dt0lPjnxfQHaE8?pid=Api&P=0&h=180" alt="Product 8">
+      <div class="product-info">
+        <h3>Backpack</h3>
+        <p>$69.99</p>
+      </div>
+    </div>
+
+    <div class="product-card">
+      <img src="https://tse1.mm.bing.net/th/id/OIP.6ZLzzk1yLmEdY6h8WbGMnwHaHa?pid=Api&P=0&h=180" alt="Product 9">
+      <div class="product-info">
+        <h3>Elegant Lamp</h3>
+        <p>$39.99</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

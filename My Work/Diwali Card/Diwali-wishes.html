@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Diwali Wishes — Animated Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg1:#0f1724; /* dark navy */
+      --bg2:#24121b; /* deep maroon */
+      --accent:#ffb703; /* warm gold */
+      --accent-2:#ff6b6b; /* pink accent */
+      --card-bg: linear-gradient(135deg, rgba(255,183,3,0.06), rgba(255,107,107,0.02));
+      --glass: rgba(255,255,255,0.04);
+      --glass-2: rgba(255,255,255,0.06);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family: 'Poppins', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background: radial-gradient(ellipse at 10% 10%, rgba(255,183,3,0.02), transparent 8%),
+                  radial-gradient(ellipse at 90% 90%, rgba(255,107,107,0.02), transparent 12%),
+                  linear-gradient(180deg,var(--bg1),var(--bg2));
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:32px;
+      color: #fff;
+    }
+
+    /* Card */
+    .card{
+      width: min(900px, 95%);
+      background: var(--card-bg);
+      border-radius: 18px;
+      padding: 36px;
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 10px 40px rgba(2,6,23,0.6);
+      border: 1px solid rgba(255,255,255,0.04);
+      display:grid;
+      grid-template-columns: 1fr 420px;
+      gap: 24px;
+      align-items:center;
+    }
+
+    /* Left text */
+    .greeting{
+      padding: 8px 16px;
+    }
+    .greeting h1{
+      margin:0 0 10px 0;
+      font-size: clamp(28px, 4vw, 48px);
+      line-height: 1.03;
+      letter-spacing: -0.5px;
+      color: linear-gradient(90deg, var(--accent), #ffd166);
+      background: linear-gradient(90deg, var(--accent), #ffd166);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 0 6px 22px rgba(0,0,0,0.6);
+      animation: popIn 700ms ease backwards;
+    }
+    .greeting p{
+      margin:0 0 18px 0;
+      opacity:0.95;
+      font-size: 16px;
+      line-height:1.5;
+      color: #e6e9ef;
+      animation: fadeUp 900ms ease backwards;
+      animation-delay: 200ms;
+    }
+    .greeting .cta{
+      display:inline-block;
+      padding: 10px 18px;
+      border-radius: 999px;
+      backdrop-filter: blur(6px);
+      background: linear-gradient(90deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));
+      border: 1px solid rgba(255,255,255,0.04);
+      font-weight:600;
+      letter-spacing:0.2px;
+      cursor:pointer;
+      transition: transform .18s ease;
+      animation: fadeUp 900ms ease backwards;
+      animation-delay: 350ms;
+    }
+    .greeting .cta:hover{transform: translateY(-4px)}
+
+    /* Right side: animated diya */
+    .diya-wrap{
+      height: 340px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      position:relative;
+    }
+
+    .diya{
+      width:260px;
+      height:260px;
+      position:relative;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      transform-origin:center;
+      animation: float 4200ms ease-in-out infinite;
+    }
+
+    /* diya base (cup) */
+    .cup{
+      width: 180px;
+      height: 100px;
+      background: linear-gradient(180deg,#ff7a00,#ffb703 60%);
+      border-radius: 90px 90px 40px 40px / 80px 80px 30px 30px;
+      position: absolute;
+      bottom: 24px;
+      box-shadow: 0 12px 30px rgba(255,147,28,0.15), inset 0 -6px 20px rgba(0,0,0,0.14);
+      transform: rotate(-6deg);
+    }
+
+    /* wick and flame */
+    .wick{
+      position:absolute;
+      bottom: 84px;
+      width:6px;height:28px;background:rgba(30,30,30,0.9);
+      border-radius:6px;
+      left:50%;transform:translateX(-50%);
+      z-index:30;
+    }
+    .flame{
+      position:absolute;
+      bottom: 106px;
+      left:50%;transform:translateX(-50%);
+      width:40px;height:60px;
+      background: radial-gradient(circle at 30% 30%, #fff3bf 0%, #ffd166 18%, #ff7a00 55%, transparent 56%);
+      border-radius: 60% 60% 55% 55% / 75% 75% 30% 30%;
+      filter: blur(.6px);
+      box-shadow: 0 8px 28px rgba(255,140,18,0.3), 0 2px 10px rgba(255,200,80,0.12) inset;
+      animation: flicker 1700ms linear infinite;
+      transform-origin:50% 85%;
+    }
+
+    /* small inner flame for depth */
+    .flame::after{
+      content:"";
+      position:absolute;left:50%;top:12%;transform:translateX(-50%);
+      width:18px;height:28px;background: radial-gradient(circle at 30% 30%, #fff 0%, #fff3bf 28%, transparent 60%);
+      border-radius:50% 50% 40% 40%/70% 70% 30% 30%;
+      filter: blur(.4px);
+      animation: innerFlick 1200ms linear infinite;
+    }
+
+    /* sparkles around */
+    .sparkles{position:absolute;inset:0;pointer-events:none}
+    .sparkles span{
+      position:absolute;display:block;width:6px;height:6px;border-radius:50%;background:linear-gradient(90deg,#fff8db,#ffd166);
+      opacity:0;transform:scale(.2);
+      animation: sparkle linear infinite;
+      box-shadow:0 0 14px rgba(255,180,50,0.9);
+    }
+
+    /* multiple sparkle positions */
+    /* we will create 12 sparkles with different delays/sizes via nth-child */
+    .sparkles span:nth-child(1){left:12%;top:18%;animation-duration:2800ms;animation-delay:0ms}
+    .sparkles span:nth-child(2){left:26%;top:10%;animation-duration:3600ms;animation-delay:200ms}
+    .sparkles span:nth-child(3){left:72%;top:8%;animation-duration:3200ms;animation-delay:350ms}
+    .sparkles span:nth-child(4){left:82%;top:26%;animation-duration:3000ms;animation-delay:100ms}
+    .sparkles span:nth-child(5){left:64%;top:40%;animation-duration:4200ms;animation-delay:420ms}
+    .sparkles span:nth-child(6){left:50%;top:62%;animation-duration:2600ms;animation-delay:150ms}
+    .sparkles span:nth-child(7){left:38%;top:56%;animation-duration:3800ms;animation-delay:250ms}
+    .sparkles span:nth-child(8){left:18%;top:44%;animation-duration:3100ms;animation-delay:500ms}
+    .sparkles span:nth-child(9){left:88%;top:60%;animation-duration:3600ms;animation-delay:320ms}
+    .sparkles span:nth-child(10){left:10%;top:72%;animation-duration:4000ms;animation-delay:30ms}
+    .sparkles span:nth-child(11){left:54%;top:18%;animation-duration:2900ms;animation-delay:200ms}
+    .sparkles span:nth-child(12){left:78%;top:74%;animation-duration:4600ms;animation-delay:600ms}
+
+    /* footer message */
+    .from{
+      position:absolute;left:18px;right:18px;bottom:14px;font-size:13px;color:rgba(255,255,255,0.55);display:flex;justify-content:space-between;align-items:center;padding:6px 10px;border-radius:10px;background:var(--glass);
+    }
+
+    /* animations */
+    @keyframes float{
+      0%{transform: translateY(0) rotate(-1deg)}
+      50%{transform: translateY(-10px) rotate(2deg)}
+      100%{transform: translateY(0) rotate(-1deg)}
+    }
+    @keyframes flicker{
+      0%{transform: scaleY(1) translateY(0) rotate(0)}
+      20%{transform: scaleY(1.06) translateY(-2px) rotate(1deg)}
+      40%{transform: scaleY(.96) translateY(1px) rotate(-1deg)}
+      60%{transform: scaleY(1.03) translateY(-1px) rotate(.5deg)}
+      100%{transform: scaleY(1) translateY(0) rotate(0)}
+    }
+    @keyframes innerFlick{
+      0%{transform: translateY(0) scale(1);opacity:1}
+      50%{transform: translateY(-3px) scale(.98);opacity:.9}
+      100%{transform: translateY(0) scale(1);opacity:1}
+    }
+    @keyframes sparkle{
+      0%{opacity:0;transform:scale(.2) translateY(0)}
+      30%{opacity:1;transform:scale(1.1) translateY(-6px)}
+      70%{opacity:.8;transform:scale(.8) translateY(-14px)}
+      100%{opacity:0;transform:scale(.2) translateY(-30px)}
+    }
+
+    @keyframes popIn{
+      0%{transform: translateY(12px) scale(.98);opacity:0}
+      100%{transform: translateY(0) scale(1);opacity:1}
+    }
+    @keyframes fadeUp{
+      0%{transform: translateY(8px);opacity:0}
+      100%{transform: translateY(0);opacity:1}
+    }
+
+    /* responsive */
+    @media (max-width:880px){
+      .card{grid-template-columns:1fr;gap:18px;padding:22px}
+      .diya-wrap{height:260px}
+    }
+
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="greeting">
+      <h1>Happy Diwali</h1>
+      <p>May the festival of lights brighten your life with joy, prosperity and peace. Wishing you a sparkling Diwali full of love and laughter.</p>
+      <button class="cta">Share the light ✨</button>
+    </div>
+
+    <div class="diya-wrap">
+      <div class="diya" aria-hidden="true">
+        <div class="cup"></div>
+        <div class="wick"></div>
+        <div class="flame"></div>
+      </div>
+      <div class="sparkles">
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+
+    <div class="from">From <strong>You</strong> <span>✨ May your lamps always shine</span></div>
+  </div>
+
+  <script>
+    // Make the 'Share the light' button copy text to clipboard as a simple interaction
+    document.querySelector('.cta').addEventListener('click', ()=>{
+      const txt = 'Wishing you a very Happy Diwali! \nMay your life be filled with light and joy.';
+      navigator.clipboard?.writeText(txt).then(()=>{
+        const el = document.createElement('div');
+        el.textContent = 'Copied Diwali message! Share it with someone you love.';
+        el.style = 'position:fixed;left:50%;top:20px;transform:translateX(-50%);background:rgba(0,0,0,0.6);padding:10px 14px;border-radius:8px;color:#fff;font-weight:600;z-index:9999;';
+        document.body.appendChild(el);
+        setTimeout(()=>el.remove(),2000);
+      });
+    });
+  </script>
+</body>
+</html>

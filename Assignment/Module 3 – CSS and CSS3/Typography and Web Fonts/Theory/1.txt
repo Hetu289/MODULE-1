@@ -1,0 +1,21 @@
+Question 1: Explain the difference between web-safe fonts and custom web fonts. Why might you use a web-safe font over a custom font?
+
+Web-safe fonts:
+
+These are pre-installed fonts that are commonly available on most operating systems (e.g., Arial, Times New Roman, Verdana, Georgia).
+
+They load quickly and are reliably displayed across all browsers and devices.
+
+Custom web fonts:
+
+Fonts that are not pre-installed on devices and are loaded from external sources like Google Fonts or hosted files.
+
+They provide unique and stylish typography but can slightly increase page load time.
+
+Why use web-safe fonts:
+
+Faster loading and better performance.
+
+Guaranteed display on all devices, especially when custom fonts may fail to load.
+
+Simpler fallback and less dependency on external sources.

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Webpage Lab</title>
+  <style>
+    /* General Styling */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* Navigation Bar */
+    nav {
+      background: linear-gradient(90deg, #ff758c, #ff7eb3);
+      padding: 15px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 0 0 15px 15px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    nav .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: white;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+    }
+
+    nav ul li {
+      margin-left: 25px;
+    }
+
+    nav ul li a {
+      color: white;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ffd1dc;
+    }
+
+    /* Content Section */
+    .content {
+      display: flex;
+      gap: 25px;
+      padding: 40px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .column {
+      flex: 1;
+      background: #fff;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .column:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    }
+
+    .column h2 {
+      margin-bottom: 15px;
+      color: #ff4d6d;
+    }
+
+    .column p {
+      color: #555;
+      line-height: 1.6;
+    }
+
+    /* Footer */
+    footer {
+      background: linear-gradient(90deg, #ff758c, #ff7eb3);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-weight: bold;
+      margin-top: 30px;
+      border-radius: 15px 15px 0 0;
+      box-shadow: 0 -5px 15px rgba(0,0,0,0.1);
+    }
+
+    /* Media Queries for Mobile */
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+      }
+
+      nav ul li {
+        margin: 10px 0 0 0;
+      }
+
+      .content {
+        flex-direction: column;
+        padding: 20px;
+      }
+
+      .column {
+        margin-bottom: 20px;
+        padding: 20px;
+      }
+
+      body {
+        font-size: 16px;
+      }
+
+      nav .logo {
+        font-size: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <div class="logo">MyWebsite</div>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Content Section -->
+  <div class="content">
+    <div class="column">
+      <h2>Column 1</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+      <p>Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.</p>
+    </div>
+    <div class="column">
+      <h2>Column 2</h2>
+      <p>Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+      <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    © 2025 MyWebsite. All Rights Reserved.
+  </footer>
+
+</body>
+</html>

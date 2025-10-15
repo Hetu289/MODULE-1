@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Form</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="contact-wrapper">
+    <form id="contactForm">
+      <h2>Contact Us</h2>
+      
+      <div class="input-group">
+        <input type="text" id="name" class="form-field" required>
+        <label for="name">Name</label>
+      </div>
+
+      <div class="input-group">
+        <input type="email" id="email" class="form-field" required>
+        <label for="email">Email</label>
+      </div>
+
+      <div class="input-group">
+        <textarea id="message" class="form-field" rows="5" required></textarea>
+        <label for="message">Message</label>
+      </div>
+
+      <button type="submit" id="submitBtn">Send Message</button>
+    </form>
+  </div>
+
+</body>
+</html>

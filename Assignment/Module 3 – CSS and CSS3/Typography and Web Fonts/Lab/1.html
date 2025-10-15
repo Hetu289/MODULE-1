@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Blog Post</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    /* General Styling */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      line-height: 1.8;
+      padding: 40px;
+    }
+
+    .blog-container {
+      max-width: 900px;
+      margin: auto;
+      background: #fff;
+      padding: 40px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .blog-container:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    }
+
+    /* Title & Subtitle */
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      margin-bottom: 10px;
+      color: #ff4d6d;
+    }
+
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 22px;
+      margin-bottom: 25px;
+      color: #ff758c;
+    }
+
+    /* Body Content */
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      color: #555;
+    }
+
+    /* Responsive Typography */
+    @media (max-width: 768px) {
+      .blog-container {
+        padding: 25px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      h2 {
+        font-size: 20px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      h2 {
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="blog-container">
+    <h1>The Art of Modern Web Design</h1>
+    <h2>How to create responsive and aesthetic layouts</h2>
+
+    <p>Modern web design is about combining creativity with functionality. A good design ensures that users can navigate the website easily while enjoying a visually appealing interface. With tools like CSS Flexbox and Grid, designers can create layouts that adapt beautifully to different screen sizes.</p>
+
+    <p>Typography plays a crucial role in readability and aesthetics. Using contrasting fonts for headings and body content can help guide the reader’s eye and emphasize important information. Google Fonts provides a wide range of fonts to enhance the visual appeal of your website.</p>
+
+    <p>Spacing, line-height, and responsive font sizes improve the reading experience, especially on mobile devices. Designers should always test their layouts across multiple devices to ensure that the design remains clean and accessible.</p>
+
+    <p>By combining modern CSS techniques with thoughtful typography and spacing, you can create blog posts and webpages that are both beautiful and functional, providing an optimal user experience.</p>
+  </div>
+
+</body>
+</html>

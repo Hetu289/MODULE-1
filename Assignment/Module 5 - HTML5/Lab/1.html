@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML5 Tags Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f7fc;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    h1 {
+      background-color: #1976d2;
+      color: white;
+      padding: 15px;
+      margin: 0;
+    }
+
+    h2 {
+      color: #0d47a1;
+      margin-top: 30px;
+    }
+
+    audio, video {
+      margin-top: 15px;
+      border: 2px solid #1976d2;
+      border-radius: 8px;
+      background-color: #fff;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    }
+
+    hr {
+      width: 80%;
+      border: 1px solid #90caf9;
+      margin: 40px auto;
+    }
+
+    .shape-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
+
+    canvas, svg {
+      border: 2px solid #1565c0;
+      border-radius: 8px;
+      background-color: white;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    }
+
+    footer {
+      background-color: #1976d2;
+      color: white;
+      padding: 10px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>HTML5 Multimedia and Shape Example</h1>
+
+  <h2>🎵 Audio and 🎬 Video Example</h2>
+
+  <!-- Audio -->
+  <audio controls autoplay loop muted>
+    <source src="sample-audio.mp3" type="audio/mpeg">
+    Your browser does not support the audio tag.
+  </audio>
+
+  <br><br>
+
+  <!-- Video -->
+  <video width="420" height="250" controls autoplay loop muted>
+    <source src="sample-video.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <hr>
+
+  <h2>🎨 Canvas and SVG Shape Examples</h2>
+
+  <div class="shape-container">
+    <!-- Canvas -->
+    <canvas id="myCanvas" width="350" height="250"></canvas>
+
+    <!-- SVG -->
+    <svg width="350" height="250">
+      <!-- Rectangle -->
+      <rect x="40" y="40" width="100" height="60" fill="#64b5f6" stroke="black" stroke-width="2" />
+
+      <!-- Circle -->
+      <circle cx="230" cy="80" r="35" fill="#ffb74d" stroke="black" stroke-width="2" />
+
+      <!-- Line -->
+      <line x1="50" y1="180" x2="300" y2="180" stroke="green" stroke-width="3" />
+
+      <!-- Text -->
+      <text x="110" y="230" fill="#0d47a1" font-size="18" font-family="Arial">SVG Shapes</text>
+    </svg>
+  </div>
+
+  <script>
+    // Canvas Shapes
+    var c = document.getElementById("myCanvas");
+    var ctx = c.getContext("2d");
+
+    // Background color
+    ctx.fillStyle = "#e3f2fd";
+    ctx.fillRect(0, 0, 350, 250);
+
+    // Rectangle
+    ctx.fillStyle = "#81c784";
+    ctx.fillRect(40, 40, 100, 60);
+    ctx.strokeStyle = "black";
+    ctx.strokeRect(40, 40, 100, 60);
+
+    // Circle
+    ctx.beginPath();
+    ctx.arc(230, 80, 35, 0, 2 * Math.PI);
+    ctx.fillStyle = "#ff8a65";
+    ctx.fill();
+    ctx.stroke();
+
+    // Line
+    ctx.beginPath();
+    ctx.moveTo(50, 180);
+    ctx.lineTo(300, 180);
+    ctx.strokeStyle = "green";
+    ctx.lineWidth = 3;
+    ctx.stroke();
+
+    // Text
+    ctx.font = "18px Arial";
+    ctx.fillStyle = "#0d47a1";
+    ctx.fillText("Canvas Shapes", 90, 230);
+  </script>
+
+  <footer>Created by Hetvi – HTML5 Canvas and SVG Example</footer>
+
+</body>
+</html>
