@@ -1,0 +1,19 @@
+<html>
+<body>
+<script>
+function gcd() {
+    var a=+a1.value, b=+b1.value;
+    while(b!=0){
+        var t=b;
+        b=a%b;
+        a=t;
+    }
+    res.innerHTML = a;
+}
+</script>
+
+<input id="a1"><input id="b1">
+<button onclick="gcd()">GCD</button>
+<p id="res"></p>
+</body>
+</html>

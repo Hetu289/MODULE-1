@@ -1,0 +1,25 @@
+<script>
+function chk()
+{
+var num=document.getElementById("number").value;
+if(num%2==0)
+{
+document.getElementById("res").innerHTML="The number is even";
+}
+else 
+{
+
+document.getElementById("res").innerHTML="THe number  is odd";
+
+}
+}
+</script>
+
+<center>
+<p align="center" id="res"></p>
+<form>
+<input type="text" id="number" placeholder="Enter Numbers *" />
+<br><br>
+<button type="button" onclick="chk()">Click Me</button>
+</form>
+</center>

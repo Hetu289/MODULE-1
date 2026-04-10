@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Neon AI To-Do</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Tailwind (utilities only) -->
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+/* ================= DARK MODE ================= */
+body {
+  background: #f1f5f9;
+  transition: background 0.4s ease;
+}
+body.dark-mode {
+  background: #020617;
+}
+
+/* Card */
+.todo-card {
+  background: #ffffff;
+  transition: 0.4s;
+}
+body.dark-mode .todo-card {
+  background: #0f172a;
+  color: #e5e7eb;
+}
+
+/* Text fix */
+body.dark-mode p,
+body.dark-mode h2,
+body.dark-mode span {
+  color: #e5e7eb;
+}
+
+/* ================= NEON BUBBLES ================= */
+.bubbles {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+}
+.bubble {
+  position: absolute;
+  bottom: -150px;
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(circle, #7c3aed, #22d3ee);
+  border-radius: 50%;
+  animation: float 18s infinite ease-in;
+  opacity: 0.6;
+}
+.bubble:nth-child(1){left:10%;}
+.bubble:nth-child(2){left:30%;width:70px;height:70px;animation-duration:24s;}
+.bubble:nth-child(3){left:50%;animation-duration:20s;}
+.bubble:nth-child(4){left:70%;width:90px;height:90px;animation-duration:30s;}
+.bubble:nth-child(5){left:85%;animation-duration:22s;}
+
+@keyframes float {
+  0% { transform: translateY(0); opacity:0; }
+  50% { opacity:0.8; }
+  100% { transform: translateY(-120vh); opacity:0; }
+}
+
+/* ================= TASK ================= */
+.task-done {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* AI message */
+.ai-box {
+  font-size: 0.9rem;
+  padding: 6px;
+  border-radius: 6px;
+  margin-bottom: 8px;
+  background: #e0e7ff;
+}
+body.dark-mode .ai-box {
+  background: #1e1b4b;
+}
+</style>
+</head>
+
+<body class="min-h-screen flex items-center justify-center">
+
+<!-- Neon Background -->
+<div class="bubbles">
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+  <div class="bubble"></div>
+</div>
+
+<!-- App -->
+<div class="todo-card shadow-2xl rounded-xl p-6 w-full max-w-md">
+
+  <div class="flex justify-between items-center mb-2">
+    <h2 class="text-xl font-bold">🤖 Neon AI To-Do</h2>
+    <button onclick="toggleDark()" class="btn btn-sm btn-secondary">🌙 / ☀️</button>
+  </div>
+
+  <!-- AI Box -->
+  <div id="aiBox" class="ai-box">🤖 Start by adding your first task!</div>
+
+  <input id="taskInput" class="form-control mb-2"
+    placeholder="Add a task"
+    onkeydown="if(event.key==='Enter')addTask()">
+
+  <ul id="taskList" class="list-group mb-3"></ul>
+
+  <div class="flex justify-between items-center">
+    <button class="btn btn-danger btn-sm" onclick="clearAll()">Clear</button>
+    <span>Tasks: <b id="count">0</b></span>
+  </div>
+
+</div>
+
+<script>
+const body = document.body;
+const taskList = document.getElementById("taskList");
+const count = document.getElementById("count");
+const aiBox = document.getElementById("aiBox");
+
+const suggestions = [
+  "Drink water 💧",
+  "Practice coding 💻",
+  "Read 10 pages 📖",
+  "Go for a walk 🚶",
+  "Plan tomorrow 📅"
+];
+
+/* 🌙 DARK MODE */
+function toggleDark() {
+  body.classList.toggle("dark-mode");
+  localStorage.setItem("dark", body.classList.contains("dark-mode"));
+}
+if (localStorage.getItem("dark") === "true") body.classList.add("dark-mode");
+
+/* 🤖 AI MESSAGE */
+function aiMessage(msg) {
+  aiBox.innerText = "🤖 " + msg;
+}
+
+/* TASKS */
+function addTask() {
+  const input = document.getElementById("taskInput");
+  const text = input.value.trim();
+  if (!text) return;
+
+  // Duplicate check
+  if ([...document.querySelectorAll("#taskList span")].some(s => s.innerText === text)) {
+    aiMessage("You already added this task!");
+    return;
+  }
+
+  const li = document.createElement("li");
+  li.className = "list-group-item d-flex justify-content-between";
+  li.innerHTML = `
+    <span onclick="this.classList.toggle('task-done')">${text}</span>
+    <button class="btn btn-sm btn-danger" onclick="this.parentElement.remove();updateCount();aiTip()">❌</button>
+  `;
+  taskList.appendChild(li);
+  input.value = "";
+  updateCount();
+  aiTip();
+}
+
+function clearAll() {
+  taskList.innerHTML = "";
+  updateCount();
+  aiMessage("Clean slate! Add new productive tasks.");
+}
+
+function updateCount() {
+  count.innerText = taskList.children.length;
+}
+
+/* AI Tip */
+function aiTip() {
+  aiMessage(suggestions[Math.floor(Math.random() * suggestions.length)]);
+}
+</script>
+
+</body>
+</html>

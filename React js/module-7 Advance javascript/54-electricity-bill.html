@@ -1,0 +1,23 @@
+<html>
+<body>
+<script>
+function bill() {
+    var u = units.value;
+    var amt = 0;
+
+    if (u <= 50)
+        amt = u * 3;
+    else if (u <= 100)
+        amt = 50*3 + (u-50)*5;
+    else
+        amt = 50*3 + 50*5 + (u-100)*7;
+
+    res.innerHTML = "Bill = ₹" + amt;
+}
+</script>
+
+<input id="units" placeholder="Units">
+<button onclick="bill()">Calculate</button>
+<p id="res"></p>
+</body>
+</html>

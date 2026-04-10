@@ -1,0 +1,27 @@
+<script>
+//for...in loop (used for keys / indexes)
+
+//Iterates over enumerable properties
+
+//Mostly used with objects
+
+//In arrays, it returns index values (not recommended for arrays)    
+
+// syntax :
+// for (let key in object) {
+//     // code
+// }
+
+let employee = {
+    name: "Brijesh",
+    role: "Trainer",
+    experience: 12
+};
+
+for (let key in employee) {
+    console.log(key, ":", employee[key]);
+    // console.log(typeof(key));
+    //  console.log(typeof(employee[key]));
+}
+
+</script>

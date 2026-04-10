@@ -1,0 +1,17 @@
+<html>
+<body>
+<script>
+function table() {
+    var n = num.value;
+    var out = "";
+    for (var i = 1; i <= 10; i++)
+        out += n + " x " + i + " = " + (n*i) + "<br>";
+    res.innerHTML = out;
+}
+</script>
+
+<input id="num">
+<button onclick="table()">Show</button>
+<p id="res"></p>
+</body>
+</html>

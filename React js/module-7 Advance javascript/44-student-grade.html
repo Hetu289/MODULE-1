@@ -1,0 +1,17 @@
+<html>
+<body>
+<script>
+function grade() {
+    var m = marks.value;
+    if (m >= 90) res.innerHTML = "Grade A";
+    else if (m >= 70) res.innerHTML = "Grade B";
+    else if (m >= 50) res.innerHTML = "Grade C";
+    else res.innerHTML = "Fail";
+}
+</script>
+
+<input id="marks">
+<button onclick="grade()">Check</button>
+<p id="res"></p>
+</body>
+</html>

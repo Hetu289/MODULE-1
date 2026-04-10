@@ -1,0 +1,17 @@
+<html>
+<body>
+<script>
+function vowel() {
+    var ch = char.value.toLowerCase();
+    if ("aeiou".includes(ch))
+        res.innerHTML = "Vowel";
+    else
+        res.innerHTML = "Consonant";
+}
+</script>
+
+<input id="char">
+<button onclick="vowel()">Check</button>
+<p id="res"></p>
+</body>
+</html>

@@ -1,0 +1,85 @@
+* {
+     box-sizing: border-box;
+ }
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    padding: 25px;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* INPUT STYLE */
+input, textarea {
+    padding: 10px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+/* HTML VALIDATION COLORS */
+input:invalid,
+textarea:invalid {
+    border-color: red;
+}
+
+input:valid,
+textarea:valid {
+    border-color: green;
+}
+
+/* BUTTONS */
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    background: #007bff;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #005fcc;
+}
+
+/* SUCCESS MESSAGE HIDDEN BY DEFAULT */
+.success-box {
+    display: none;
+    margin-top: 20px;
+    padding: 15px;
+    background: #d4ffd4;
+    color: #2d7d2d;
+    border-left: 4px solid #2d7d2d;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+/* SHOW SUCCESS WHEN TARGETED */
+:target {
+    display: block !important;
+}

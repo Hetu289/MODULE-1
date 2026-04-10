@@ -1,0 +1,22 @@
+/* Custom styles to complement Bootstrap and Tailwind */
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.btn-success {
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+    border-color: #1e7e34;
+}

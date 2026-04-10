@@ -1,0 +1,17 @@
+<html>
+<body>
+<script>
+function sumDigit() {
+    var n = num.value;
+    var sum = 0;
+    for (var i=0;i<n.length;i++)
+        sum += Number(n[i]);
+    res.innerHTML = sum;
+}
+</script>
+
+<input id="num">
+<button onclick="sumDigit()">Sum</button>
+<p id="res"></p>
+</body>
+</html>

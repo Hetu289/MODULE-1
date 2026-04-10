@@ -1,0 +1,19 @@
+<html>
+<body>
+<script>
+function checkChar() {
+    var ch = c.value;
+    if (/[a-zA-Z]/.test(ch))
+        res.innerHTML = "Alphabet";
+    else if (/[0-9]/.test(ch))
+        res.innerHTML = "Digit";
+    else
+        res.innerHTML = "Special Character";
+}
+</script>
+
+<input id="c">
+<button onclick="checkChar()">Check</button>
+<p id="res"></p>
+</body>
+</html>

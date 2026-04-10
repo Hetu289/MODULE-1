@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Weather App 🌤️</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+
+<style>
+/* ================= BODY & DARK ================= */
+body{
+  margin:0;
+  font-family:sans-serif;
+  background: linear-gradient(180deg,#87ceeb,#ccefff);
+  overflow:hidden;
+  transition:0.5s;
+}
+body.dark{
+  background: linear-gradient(180deg,#0f172a,#020617);
+}
+
+/* ================= SUN ================= */
+.sun{
+  position:absolute;
+  top:50px;
+  left:50%;
+  transform:translateX(-50%);
+  width:100px;
+  height:100px;
+  background: radial-gradient(circle,#ffe066,#ffb347);
+  border-radius:50%;
+  box-shadow:0 0 60px #ffec99;
+  animation: sunMove 20s infinite alternate ease-in-out;
+}
+@keyframes sunMove{
+  0%{transform:translate(-50%,0);}
+  100%{transform:translate(-50%,10px);}
+}
+
+/* ================= CLOUDS ================= */
+.cloud{
+  position:absolute;
+  background: #fff;
+  background: radial-gradient(circle,#fff,#ddd);
+  border-radius:50%;
+  opacity:0.8;
+  animation: cloudMove linear infinite;
+}
+.cloud1{top:80px; width:120px;height:60px; left:-150px; animation-duration:40s;}
+.cloud2{top:150px;width:150px;height:70px; left:-200px; animation-duration:60s;}
+.cloud3{top:50px;width:100px;height:50px; left:-100px; animation-duration:50s;}
+
+@keyframes cloudMove{
+  0%{transform:translateX(0);}
+  100%{transform:translateX(120vw);}
+}
+
+/* ================= NEON BUBBLES ================= */
+.bubbles{position:fixed; inset:0; z-index:-1; overflow:hidden;}
+.bubble{position:absolute;bottom:-150px;width:50px;height:50px;border-radius:50%;background:radial-gradient(circle,#7c3aed,#22d3ee);animation:float 18s infinite; opacity:0.6;}
+.bubble:nth-child(1){left:10%;} .bubble:nth-child(2){left:30%;width:70px;height:70px;animation-duration:24s;} .bubble:nth-child(3){left:50%;animation-duration:20s;} .bubble:nth-child(4){left:70%;width:90px;height:90px;animation-duration:30s;} .bubble:nth-child(5){left:85%;animation-duration:22s;}
+@keyframes float{0%{transform:translateY(0);opacity:0}50%{opacity:0.8}100%{transform:translateY(-120vh);opacity:0}}
+
+/* ================= GLASS CARD ================= */
+.card-glass{background: rgba(255,255,255,0.85);backdrop-filter: blur(10px);transition:0.4s;}
+body.dark .card-glass{background: rgba(15,23,42,0.9);color:#e5e7eb;}
+.ai-box{font-size:0.9rem;padding:6px;border-radius:6px;margin-top:6px;background:#e0e7ff;}
+body.dark .ai-box{background:#1e1b4b;}
+</style>
+</head>
+<body class="min-h-screen flex items-center justify-center">
+
+<!-- Sun -->
+<div class="sun"></div>
+
+<!-- Clouds -->
+<div class="cloud cloud1"></div>
+<div class="cloud cloud2"></div>
+<div class="cloud cloud3"></div>
+
+<!-- Neon Bubbles -->
+<div class="bubbles">
+<div class="bubble"></div><div class="bubble"></div><div class="bubble"></div><div class="bubble"></div><div class="bubble"></div>
+</div>
+
+<!-- Weather Card -->
+<div class="card-glass shadow-2xl rounded-xl p-6 w-full max-w-md text-center z-10">
+
+<div class="flex justify-between items-center mb-2">
+<h2 class="text-xl font-bold">🌤️ Smart Weather</h2>
+<button onclick="toggleDark()" class="btn btn-sm btn-secondary">🌙 / ☀️</button>
+</div>
+
+<p id="status" class="mb-2">Fetching your location...</p>
+
+<div id="weather" class="hidden">
+<h3 id="city" class="text-xl font-semibold"></h3>
+<p id="temp" class="text-3xl font-bold"></p>
+<p id="condition"></p>
+<p id="wind"></p>
+<div id="aiBox" class="ai-box"></div>
+</div>
+
+</div>
+
+<script>
+const body=document.body;
+const weatherBox=document.getElementById("weather");
+const status=document.getElementById("status");
+const aiBox=document.getElementById("aiBox");
+
+/* Dark Mode */
+function toggleDark(){ body.classList.toggle("dark"); }
+
+/* Weather conditions */
+function getCondition(code){
+const map={0:"Clear ☀️",1:"Mostly Clear 🌤️",2:"Cloudy ⛅",3:"Overcast ☁️",61:"Rain 🌧️",71:"Snow ❄️",95:"Thunderstorm ⛈️"};
+return map[code]||"Normal 🌍";
+}
+
+/* AI Suggestions */
+function aiSuggestion(temp, cond){
+let msg="";
+if(temp>30) msg="🔥 Hot! Stay hydrated.";
+else if(temp<15) msg="🧥 Cold! Wear warm clothes.";
+else msg="😊 Pleasant weather!";
+if(cond.includes("Rain")) msg+=" ☔ Carry umbrella.";
+aiBox.innerText="🤖 "+msg;
+}
+
+/* Fetch weather by coordinates (Open-Meteo) */
+async function fetchWeather(lat, lon){
+try{
+const res=await fetch(`https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${lon}&current_weather=true`);
+const data=await res.json();
+const t=data.current_weather.temperature;
+const w=data.current_weather.windspeed;
+const c=data.current_weather.weathercode;
+
+weatherBox.classList.remove("hidden");
+status.style.display="none";
+document.getElementById("city").innerText="Your Location";
+document.getElementById("temp").innerText=t+"°C";
+document.getElementById("wind").innerText=`Wind: ${w} km/h`;
+document.getElementById("condition").innerText=getCondition(c);
+aiSuggestion(t,getCondition(c));
+}catch{
+status.innerText="Unable to fetch weather";
+}
+}
+
+/* Get user location */
+if(navigator.geolocation){
+navigator.geolocation.getCurrentPosition(
+pos=>fetchWeather(pos.coords.latitude,pos.coords.longitude),
+()=>status.innerText="Location denied. Cannot fetch weather."
+);
+}else status.innerText="Geolocation not supported.";
+</script>
+
+</body>
+</html>

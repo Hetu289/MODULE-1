@@ -1,0 +1,21 @@
+<html>
+<body>
+<script>
+function fib() {
+    var n = num.value;
+    var a=0, b=1, out="";
+    for (var i=1;i<=n;i++) {
+        out += a + " ";
+        var c = a + b;
+        a = b;
+        b = c;
+    }
+    res.innerHTML = out;
+}
+</script>
+
+<input id="num">
+<button onclick="fib()">Show</button>
+<p id="res"></p>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<html>
+<body>
+<script>
+function oneToN() {
+    var n = num.value;
+    var out = "";
+    for (var i = 1; i <= n; i++)
+        out += i + " ";
+    res.innerHTML = out;
+}
+</script>
+
+<input id="num">
+<button onclick="oneToN()">Print</button>
+<p id="res"></p>
+</body>
+</html>

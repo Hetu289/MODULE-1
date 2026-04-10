@@ -1,0 +1,24 @@
+<html>
+<body>
+<script>
+function largest() {
+    var a = Number(n1.value);
+    var b = Number(n2.value);
+    var c = Number(n3.value);
+
+    if (a > b && a > c)
+        res.innerHTML = a + " is largest";
+    else if (b > c)
+        res.innerHTML = b + " is largest";
+    else
+        res.innerHTML = c + " is largest";
+}
+</script>
+
+<input id="n1" placeholder="A">
+<input id="n2" placeholder="B">
+<input id="n3" placeholder="C">
+<button onclick="largest()">Check</button>
+<p id="res"></p>
+</body>
+</html>

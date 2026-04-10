@@ -1,0 +1,17 @@
+<html>
+<body>
+<script>
+function div() {
+    var n = num.value;
+    if (n % 5 == 0 && n % 11 == 0)
+        res.innerHTML = "Divisible";
+    else
+        res.innerHTML = "Not Divisible";
+}
+</script>
+
+<input id="num">
+<button onclick="div()">Check</button>
+<p id="res"></p>
+</body>
+</html>

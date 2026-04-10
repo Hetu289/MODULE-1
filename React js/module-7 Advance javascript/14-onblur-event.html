@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <style>
+        .app{
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        input{
+            padding: 10px;
+            width: 250px;
+            font-size: 16px;
+        }
+
+        button{
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+
+    <script>
+        function changecase()
+        {
+            document.getElementById("username").value = document.getElementById("username").value.toUpperCase();
+
+            document.getElementById("fullname").value = document.getElementById("fullname").value.toUpperCase();
+            
+            document.getElementById("email").value = document.getElementById("email").value.toUpperCase();
+        }
+    </script>
+</head>
+<body>
+    
+    <div class="app">
+        <h1>Fill all in uppercase</h1>
+        <input type="text" name="username" id="username" placeholder="Enter Username" onblur="changecase()">   
+        <br><br>
+        <input type="text" name="fullname" id="fullname" placeholder="Enter Fullname" onblur="changecase()">
+        <br><br>
+        <input type="text" name="email" id="email" placeholder="Enter Email" onblur="changecase()">
+        <br><br>
+        <button type="button">Submit</button>
+    </div>
+
+</body>
+</html>

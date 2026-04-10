@@ -1,0 +1,19 @@
+<html>
+<body>
+<script>
+function typeTri() {
+    var a=+a1.value, b=+b1.value, c=+c1.value;
+    if (a==b && b==c)
+        res.innerHTML = "Equilateral";
+    else if (a==b || b==c || a==c)
+        res.innerHTML = "Isosceles";
+    else
+        res.innerHTML = "Scalene";
+}
+</script>
+
+<input id="a1"><input id="b1"><input id="c1">
+<button onclick="typeTri()">Check</button>
+<p id="res"></p>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+<body>
+<script>
+function primes() {
+    var n = num.value;
+    var out="";
+    for (var i=2;i<=n;i++){
+        var c=0;
+        for (var j=1;j<=i;j++)
+            if (i%j==0) c++;
+        if (c==2) out+=i+" ";
+    }
+    res.innerHTML = out;
+}
+</script>
+
+<input id="num">
+<button onclick="primes()">Show</button>
+<p id="res"></p>
+</body>
+</html>

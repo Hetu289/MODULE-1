@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge'>
+<title>Page Title</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+<script src='main.js'></script>
+
+</head>
+<body>
+
+<center>
+<form>
+<select id="days">
+<option value="">select days</option>
+<option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+
+</select>
+<br><br>
+<button type="button" onclick="display()">click me</button>
+</form>
+<p id="res"></p>
+</center>
+
+<script>
+function display()
+{
+var days=Number(document.getElementById("days").value);
+
+switch(days)
+{
+case 1:
+document.getElementById("res").innerHTML="Today is Monday";
+break;
+case 2:
+document.getElementById("res").innerHTML="Today is Tuesday";
+break;
+
+case 3:
+document.getElementById("res").innerHTML="Today is Wednesday";
+break;
+
+case 4:
+document.getElementById("res").innerHTML="Today is Thursday";
+break;
+
+case 5:
+document.getElementById("res").innerHTML="Today is Friday";
+break;
+
+case 6:
+document.getElementById("res").innerHTML="Today is Saturday";
+break;
+
+case 7:
+document.getElementById("res").innerHTML="Today is Sunday";
+break;
+
+default:
+document.getElementById("res").innerHTML="sorry no days selected ";   
+}
+
+}    
+</script>
+</body>
+</html>

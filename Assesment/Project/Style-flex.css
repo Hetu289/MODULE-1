@@ -1,0 +1,345 @@
+/* EDULEARN */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
+
+/* Hero */
+.hero {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+    url("https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80")
+    center/cover no-repeat;
+  color: #ffffff;
+  padding-bottom: 60px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #b71c1c, #e53935);
+  padding: 15px 40px;
+}
+
+nav h1 {
+  font-size: 24px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+nav a:hover {
+  color: #ffd54f;
+}
+
+.hero-content {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.hero-content h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+  color: #ffd54f;
+}
+
+.hero-content p {
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #e53935;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #ff7043;
+}
+
+/* Features */
+.features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: linear-gradient(135deg, #1a1a1a, #2c2c2c);
+  padding: 40px 20px;
+}
+
+.feature-box {
+  background: linear-gradient(145deg, #b71c1c, #e53935);
+  color: #fff;
+  flex: 1 1 250px;
+  max-width: 300px;
+  text-align: center;
+  padding: 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+/* Workshops & Seminars */
+.meetings {
+  background: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)),
+    url("https://images.unsplash.com/photo-1556761175-5973dc0f32e7?auto=format&fit=crop&w=1200&q=80")
+    center/cover no-repeat;
+  color: #fff;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.meeting-row {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.meeting-box {
+  background: linear-gradient(135deg, #b71c1c, #e53935);
+  color: #fff;
+  width: 200px;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  font-weight: 600;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.meeting-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+}
+
+
+/* Apply Section */
+.apply {
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(120deg, #f7f7f7, #e8e8e8);
+  padding: 60px 20px;
+  gap: 20px;
+  justify-content: center;
+}
+
+.apply-left, .apply-right {
+  flex: 1 1 400px;
+  background-color: #f5f5f5;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+.apply-left h2 {
+  color: #b71c1c;
+  margin-bottom: 10px;
+}
+
+.apply-right ul {
+  list-style: square inside;
+  color: #333;
+}
+
+/* Courses */
+.courses {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.7)),
+    url("https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1200&q=80")
+    center/cover no-repeat;
+    color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.course-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.course-box {
+  width: 220px;
+  height: 120px;
+  background: rgba(255,255,255,0.85);
+  border: 2px solid #b71c1c;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  color: #b71c1c;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.2);
+}
+
+/* Facts */
+.facts {
+  background: linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+    url("https://images.unsplash.com/photo-1532614338840-ab30cf10ed36?auto=format&fit=crop&w=1200&q=80")
+    center/cover no-repeat;
+  text-align: center;
+  padding: 60px 20px;
+  color: white;
+}
+
+.facts-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.fact-box {
+  background: linear-gradient(145deg, #b71c1c, #e53935);
+  padding: 20px;
+  border-radius: 8px;
+  width: 200px;
+  font-weight: 600;
+}
+
+.fact-image {
+  background: rgba(255,255,255,0.15);
+  color: #fff;
+  margin-top: 25px;
+  padding: 40px;
+  border-radius: 8px;
+  font-style: italic;
+}
+
+/* Contact */
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 60px 20px;
+  background: linear-gradient(120deg, #f5f5f5, #ececec);
+}
+
+.contact-left, .contact-right {
+  flex: 1 1 400px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.contact-left form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+input, textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  background-color: #b71c1c;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #e53935;
+}
+
+/* Footer */
+footer {
+  background: linear-gradient(90deg, #000000, #1a1a1a);
+  color: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .apply {
+    flex-direction: column;
+  }
+
+  .contact {
+    flex-direction: column;
+  }
+
+  .course-row, .facts-row, .meeting-row {
+    flex-direction: column;
+  }
+
+  .feature-box, .course-box, .meeting-box, .fact-box {
+    width: 90%;
+  }
+}
+
+/* Course Background Images */
+.course-box:nth-child(1) {
+  background: url("https://tse4.mm.bing.net/th/id/OIP.LxP1qwPjHE1CDFmLBh3bxQHaDu?pid=Api&P=0&h=180")
+    center/cover no-repeat;
+      color: transparent;
+
+  
+}
+
+.course-box:nth-child(2) {
+  background: url("https://tse3.mm.bing.net/th/id/OIP.jsXQ9mmUduORVOq1dkPmLQHaEJ?pid=Api&P=0&h=180")
+    center/cover no-repeat;
+      color:white;
+      text-align: start;
+
+  
+}
+
+.course-box:nth-child(3) {
+  background: url("https://wallpapercave.com/wp/wp10167050.jpg")
+    center/cover no-repeat;
+      color:transparent;
+
+  
+}
+
+.course-box:nth-child(4) {
+  background: url("https://tse2.mm.bing.net/th/id/OIP.YoTn0KN3bWrDK0GsxhdbQAHaEK?pid=Api&P=0&h=180")
+    center/cover no-repeat;
+  color:white;
+}

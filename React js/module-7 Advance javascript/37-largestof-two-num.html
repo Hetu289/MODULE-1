@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+function largest() {
+    var a = Number(document.getElementById("a").value);
+    var b = Number(document.getElementById("b").value);
+
+    if (a > b)
+        res.innerHTML = "Largest is " + a;
+    else
+        res.innerHTML = "Largest is " + b;
+}
+</script>
+
+<input id="a" placeholder="First number">
+<input id="b" placeholder="Second number">
+<button onclick="largest()">Find</button>
+<p id="res"></p>
+
+</body>
+</html>

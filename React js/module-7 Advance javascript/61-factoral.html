@@ -1,0 +1,17 @@
+<html>
+<body>
+<script>
+function fact() {
+    var n = num.value;
+    var f = 1;
+    for (var i = 1; i <= n; i++)
+        f *= i;
+    res.innerHTML = "Factorial = " + f;
+}
+</script>
+
+<input id="num">
+<button onclick="fact()">Find</button>
+<p id="res"></p>
+</body>
+</html>

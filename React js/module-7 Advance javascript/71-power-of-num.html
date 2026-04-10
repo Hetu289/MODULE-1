@@ -1,0 +1,16 @@
+<html>
+<body>
+<script>
+function power() {
+    var a=+n.value, p=+pow.value;
+    var r=1;
+    for(var i=1;i<=p;i++) r*=a;
+    res.innerHTML = r;
+}
+</script>
+
+<input id="n"><input id="pow">
+<button onclick="power()">Find</button>
+<p id="res"></p>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+<body>
+<script>
+function arm() {
+    var n = num.value;
+    var sum = 0, temp = n;
+
+    while (temp > 0) {
+        var r = temp % 10;
+        sum += r * r * r;
+        temp = Math.floor(temp / 10);
+    }
+    res.innerHTML = (sum == n) ? "Armstrong" : "Not Armstrong";
+}
+</script>
+
+<input id="num">
+<button onclick="arm()">Check</button>
+<p id="res"></p>
+</body>
+</html>

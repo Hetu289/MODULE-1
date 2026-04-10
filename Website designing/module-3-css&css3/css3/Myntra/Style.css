@@ -1,0 +1,75 @@
+/* GLOBAL DESIGN */
+:root {
+    --brand: #ff3f6c;
+    --muted: #6c757d;
+}
+
+body {
+    font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+}
+
+/* Promo Strip */
+.promo-strip {
+    background: linear-gradient(90deg, #fff0f2, #ffffff);
+    border-bottom: 1px solid #eee;
+    font-size: 0.95rem;
+}
+
+/* Navbar Brand */
+.navbar-brand {
+    color: var(--brand);
+    font-weight: 700;
+    letter-spacing: 0.2px;
+}
+
+/* Category Cards */
+.categories .card {
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.categories .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .10);
+}
+
+/* Product Cards */
+.product-card {
+    border: none;
+}
+
+.product-card .card-img-top {
+    height: 230px;
+    object-fit: cover;
+    background: #fff;
+}
+
+.price {
+    font-weight: 700;
+    color: #111;
+}
+
+.mrp {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 0.9rem;
+    margin-left: .5rem;
+}
+
+/* Footer */
+.site-footer {
+    background: #111;
+    color: #f5f5f5;
+    padding: 3rem 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .product-card .card-img-top {
+        height: 200px;
+    }
+}
+@media (max-width: 576px) {
+    .product-card .card-img-top {
+        height: 180px;
+    }
+}

@@ -1,0 +1,18 @@
+<html>
+<body>
+<script>
+function numPat() {
+    var s="";
+    for(var i=1;i<=5;i++){
+        for(var j=1;j<=i;j++)
+            s+=j+" ";
+        s+="<br>";
+    }
+    res.innerHTML=s;
+}
+</script>
+
+<button onclick="numPat()">Show</button>
+<p id="res"></p>
+</body>
+</html>

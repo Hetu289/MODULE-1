@@ -1,0 +1,17 @@
+<html>
+<body>
+<script>
+function nToOne() {
+    var n = num.value;
+    var out = "";
+    for (var i = n; i >= 1; i--)
+        out += i + " ";
+    res.innerHTML = out;
+}
+</script>
+
+<input id="num">
+<button onclick="nToOne()">Print</button>
+<p id="res"></p>
+</body>
+</html>

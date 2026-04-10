@@ -1,0 +1,33 @@
+body 
+{
+margin: 0;
+padding: 0;
+overflow-x: hidden;
+}
+#loader 
+{
+width: 400px;
+height: 400px;
+position: absolute;
+left: 35%;
+top: 18%;
+background: url('https://media.giphy.com/media/v1.Y2lkPWVjZjA1ZTQ3aHdybzdheGJzZjUyOHFqb2h5NDdzdjVsajFncm9wZmRsbGc4MjBubCZlcD12MV9naWZzX3NlYXJjaCZjdD1n/jsPdPJ1mkYiZrX0DHT/giphy.gif') no-repeat;
+background-size: 400px 400px;
+background-position: center;
+}
+#main
+{
+width: 50%;
+height: auto;
+margin: auto;
+margin-top: 5%;
+display: none;
+}
+
+#main h1 
+{
+font-size: 85px;
+text-align: center;
+color:lightsalmon;
+transition: 2s ease all;    
+}

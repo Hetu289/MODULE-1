@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  font-family: Arial;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+.section {
+  padding: 60px 20px;
+}
+
+.skill-bar {
+  margin-bottom: 20px;
+}
+
+.bar {
+  height: 8px;
+  background: #ddd;
+}
+
+.bar span {
+  height: 8px;
+  display: block;
+  background: royalblue;
+}
+
+.grid {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  padding: 30px;
+  background: #eee;
+  border-radius: 8px;
+}

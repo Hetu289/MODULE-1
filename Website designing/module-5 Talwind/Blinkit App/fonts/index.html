@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlinkIt - Grocery Delivery</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="text-2xl font-bold text-green-600">BlinkIt</div>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="text-gray-700 hover:text-green-600">Home</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-green-600">Categories</a></li>
+                <li><a href="#" class="text-gray-700 hover:text-green-600">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold text-center mb-8">Fresh Groceries Delivered Fast</h1>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6" id="product-grid">
+            <!-- Product Cards (Bootstrap cards with Tailwind utilities) -->
+            <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://via.placeholder.com/300x200?text=Apple" class="card-img-top" alt="Apple">
+                <div class="card-body p-4">
+                    <h5 class="card-title text-lg font-semibold">Fresh Apples</h5>
+                    <p class="card-text text-gray-600">Crisp and juicy red apples.</p>
+                    <p class="text-green-600 font-bold">$2.99</p>
+                    <button class="btn btn-success add-to-cart" data-product="Apple">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://via.placeholder.com/300x200?text=Milk" class="card-img-top" alt="Milk">
+                <div class="card-body p-4">
+                    <h5 class="card-title text-lg font-semibold">Organic Milk</h5>
+                    <p class="card-text text-gray-600">Fresh organic milk, 1L.</p>
+                    <p class="text-green-600 font-bold">$1.49</p>
+                    <button class="btn btn-success add-to-cart" data-product="Milk">Add to Cart</button>
+                </div>
+            </div>
+            <div class="card bg-white shadow-lg rounded-lg overflow-hidden">
+                <img src="https://via.placeholder.com/300x200?text=Bread" class="card-img-top" alt="Bread">
+                <div class="card-body p-4">
+                    <h5 class="card-title text-lg font-semibold">Whole Wheat Bread</h5>
+                    <p class="card-text text-gray-600">Healthy whole wheat loaf.</p>
+                    <p class="text-green-600 font-bold">$3.99</p>
+                    <button class="btn btn-success add-to-cart" data-product="Bread">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4">
+        <div class="container mx-auto text-center">
+            <p>&copy; 2023 BlinkIt. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Embedded JS (from script.js) -->
+    <script>
+        // Simple cart functionality
+        let cart = [];
+
+        document.querySelectorAll('.add-to-cart').forEach(button => {
+            button.addEventListener('click', () => {
+                const product = button.getAttribute('data-product');
+                cart.push(product);
+                alert(`${product} added to cart! Total items: ${cart.length}`);
+                console.log('Cart:', cart);
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<html>
+<body>
+<script>
+function lcm() {
+    var a=+a1.value, b=+b1.value;
+    var max = (a>b)?a:b;
+    while(true){
+        if(max%a==0 && max%b==0){
+            res.innerHTML = max;
+            break;
+        }
+        max++;
+    }
+}
+</script>
+
+<input id="a1"><input id="b1">
+<button onclick="lcm()">LCM</button>
+<p id="res"></p>
+</body>
+</html>

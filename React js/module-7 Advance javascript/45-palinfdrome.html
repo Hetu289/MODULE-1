@@ -1,0 +1,15 @@
+<html>
+<body>
+<script>
+function pal() {
+    var n = num.value;
+    var rev = n.split("").reverse().join("");
+    res.innerHTML = (n == rev) ? "Palindrome" : "Not Palindrome";
+}
+</script>
+
+<input id="num">
+<button onclick="pal()">Check</button>
+<p id="res"></p>
+</body>
+</html>

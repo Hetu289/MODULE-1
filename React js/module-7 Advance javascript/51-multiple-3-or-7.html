@@ -1,0 +1,17 @@
+<html>
+<body>
+<script>
+function multi() {
+    var n = num.value;
+    if (n%3==0 || n%7==0)
+        res.innerHTML = "Multiple of 3 or 7";
+    else
+        res.innerHTML = "Not Multiple";
+}
+</script>
+
+<input id="num">
+<button onclick="multi()">Check</button>
+<p id="res"></p>
+</body>
+</html>

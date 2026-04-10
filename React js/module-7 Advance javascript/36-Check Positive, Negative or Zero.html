@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+function checkNum() {
+    var n = document.getElementById("num").value;
+
+    if (n > 0)
+        res.innerHTML = "Positive";
+    else if (n < 0)
+        res.innerHTML = "Negative";
+    else
+        res.innerHTML = "Zero";
+}
+</script>
+
+<input id="num">
+<button onclick="checkNum()">Check</button>
+<p id="res"></p>
+
+</body>
+</html>

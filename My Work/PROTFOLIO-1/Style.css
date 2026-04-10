@@ -1,0 +1,303 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden !important;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: url('Images/bg2.jpg') no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 15px 0;
+}
+
+.navbar-brand {
+  font-weight: 600;
+  color: #fff !important;
+}
+
+.nav-link {
+  color: #fff !important;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #9f7aea !important;
+}
+
+.connect-btn {
+  border: 1px solid #fff;
+  color: #fff;
+  background: transparent;
+  border-radius: 25px;
+  padding: 8px 18px;
+  transition: 0.3s;
+}
+
+.connect-btn:hover {
+  background: #9f7aea;
+  color: #fff;
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  height: 100vh;
+  padding: 120px 80px 60px;
+}
+
+.content {
+  max-width: 600px;
+}
+
+.content p {
+  margin-top: 15px;
+  color: #ddd;
+}
+
+.hero .btn {
+  margin-top: 20px;
+}
+
+/* Typewriter Effect */
+.typewriter {
+  display: inline-block;
+  border-right: 3px solid #9f7aea;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 0;
+  animation: typing 3s steps(30, end) forwards, blink 0.7s step-end infinite;
+  position: relative;
+  left: -10px; /* <-- shifted slightly left */
+}
+
+@keyframes typing {
+  from { width: 0; }
+  to { width: 18ch; }
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+/* Astronaut Image */
+.astronaut img {
+  width: 300px;
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+  100% { transform: translateY(0); }
+}
+
+/* Sections Styling */
+.about, .skills, .projects, .contact {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.about p {
+  text-align: center;
+}
+
+/* Skills */
+.skill-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+}
+
+.skill {
+  background: #9f7aea;
+  padding: 12px 25px;
+  border-radius: 50px;
+  transition: transform 0.3s;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+}
+
+/* Projects */
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.project-box {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 25px;
+  border-radius: 15px;
+  width: 250px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.project-box:hover {
+  transform: translateY(-8px);
+  background: rgba(159, 122, 234, 0.2);
+}
+
+/* Contact */
+.contact form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 400px;
+  margin: auto;
+}
+
+.contact input,
+.contact textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+.contact button {
+  background: #9f7aea;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.contact button:hover {
+  background: #b794f4;
+}
+
+/* Social Icons */
+.social-icons {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  color: #fff;
+  font-size: 1.3rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+  color: #9f7aea;
+  background: #fff;
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #9f7aea, 0 0 30px #9f7aea;
+}
+
+/* Footer */
+.footer {
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 40px 20px 20px;
+  font-size: 0.95rem;
+  margin-top: 0;
+}
+
+/* RESPONSIVE FIXES */
+@media(max-width:580px){
+
+  /* Background image */
+  body {
+    background: url('Images/bg2.jpg') no-repeat center center !important;
+    background-size: cover !important;
+    
+    overflow-x: hidden !important;
+  }
+
+  /* Navbar */
+  .navbar {
+    padding-right: 20px !important;
+  }
+
+  .navbar-toggler {
+    margin-left: 75px !important; /* <-- shifted left */
+    margin-right: 0 !important;
+    border: 1px solid #fff;
+    z-index: 9999;
+  }
+
+  .navbar-toggler-icon {
+    filter: invert(1);
+  }
+
+  .navbar-collapse {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px;
+    border-radius: 10px;
+    margin-left: auto !important;
+    margin-right: 0 !important;
+    display: block;
+  }
+
+  .navbar-nav .nav-link {
+    margin: 10px 0 !important;
+    text-align: center;
+  }
+
+  /* Hero mobile */
+  .hero {
+    flex-direction: column !important;
+    text-align: center !important;
+    padding: 80px 20px 40px !important;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .hero .content {
+    max-width: 100% !important;
+  }
+
+  .astronaut {
+    margin-top: 30px !important;
+    text-align: center;
+  }
+
+  .astronaut img {
+    width: 220px !important;
+  }
+
+  .connect-btn {
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+  }
+}
+
+.footer {
+  background: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  padding: 40px 20px 20px;
+  font-size: 0.95rem;
+  margin-top: 0;
+}

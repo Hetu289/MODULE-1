@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Courses Carousel</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #0a0f24, #111);
+            font-family: 'Poppins', sans-serif;
+            color: #fff;
+        }
+
+        /* Carousel Styling */
+        #coursesCarousel img {
+            object-fit: cover;
+            height: 500px;
+            filter: brightness(65%);
+        }
+
+        .carousel-inner {
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 0 25px rgba(0, 255, 200, 0.25);
+        }
+
+        /* Glass Effect Caption */
+        .course-caption {
+            backdrop-filter: blur(12px);
+            background: rgba(0, 0, 0, 0.35);
+            padding: 20px;
+            border-radius: 14px;
+            box-shadow: 0 0 12px rgba(0, 255, 255, 0.3);
+        }
+
+        .course-title {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #00eaff;
+            text-shadow: 0 0 10px #00eaff;
+        }
+
+        .course-desc {
+            font-size: 1.1rem;
+            color: #e2faff;
+        }
+
+        /* Gradient overlay */
+        .carousel-item::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(90deg, rgba(0, 238, 255, 0.15), rgba(0, 255, 150, 0.15));
+            pointer-events: none;
+        }
+
+        /* Indicators */
+        .carousel-indicators button {
+            width: 12px;
+            height: 12px;
+            background-color: #00ffc8;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Online Courses Modern Carousel -->
+    <div id="coursesCarousel" class="carousel slide carousel-fade container mt-5" data-bs-ride="carousel">
+
+        <!-- Indicators -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#coursesCarousel" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#coursesCarousel" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#coursesCarousel" data-bs-slide-to="2"></button>
+        </div>
+
+        <!-- Slides -->
+        <div class="carousel-inner">
+
+            <!-- Slide 1: Full Stack Dev -->
+            <div class="carousel-item active">
+                <img src="https://bditinst.in/wp-content/uploads/2022/07/fullstack.jpg" class="d-block w-100" alt="Full Stack">
+                <div class="carousel-caption d-none d-md-block course-caption">
+                    <h3 class="course-title">Full Stack Development</h3>
+                    <p class="course-desc">Master HTML, CSS, JavaScript, React, Node & Databases.</p>
+                </div>
+            </div>
+
+            <!-- Slide 2: Cyber Security -->
+            <div class="carousel-item">
+                <img src="https://www.streamnetworks.co.uk/wp-content/uploads/Cyber-security-banner_.jpg" class="d-block w-100" alt="Cyber Security">
+                <div class="carousel-caption d-none d-md-block course-caption">
+                    <h3 class="course-title">Cyber Security & Ethical Hacking</h3>
+                    <p class="course-desc">Learn penetration testing, networking & cyber safety tools.</p>
+                </div>
+            </div>
+
+            <!-- Slide 3: UI/UX -->
+            <div class="carousel-item">
+                <img src="https://ice.aiub.edu/upload/course_banner/202308021690977891.png" class="d-block w-100" alt="UI UX">
+                <div class="carousel-caption d-none d-md-block course-caption">
+                    <h3 class="course-title">UI / UX Designing</h3>
+                    <p class="course-desc">Learn modern design, prototypes, color theory & Figma.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#coursesCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+
+        <button class="carousel-control-next" type="button" data-bs-target="#coursesCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

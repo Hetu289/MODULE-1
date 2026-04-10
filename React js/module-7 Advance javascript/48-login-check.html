@@ -1,0 +1,17 @@
+<html>
+<body>
+<script>
+function login() {
+    if (u.value == "admin" && p.value == "123")
+        res.innerHTML = "Login Success";
+    else
+        res.innerHTML = "Login Failed";
+}
+</script>
+
+<input id="u" placeholder="Username">
+<input id="p" placeholder="Password">
+<button onclick="login()">Login</button>
+<p id="res"></p>
+</body>
+</html>

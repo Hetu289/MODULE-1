@@ -1,0 +1,16 @@
+<html>
+<body>
+<script>
+function countEO() {
+    var n=num.value, e=0,o=0;
+    for(var i=0;i<n.length;i++)
+        (n[i]%2==0)?e++:o++;
+    res.innerHTML="Even:"+e+" Odd:"+o;
+}
+</script>
+
+<input id="num">
+<button onclick="countEO()">Count</button>
+<p id="res"></p>
+</body>
+</html>

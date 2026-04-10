@@ -1,0 +1,17 @@
+<html>
+<body>
+<script>
+function reverse() {
+    var n = num.value;
+    var rev = "";
+    for (var i=n.length-1;i>=0;i--)
+        rev += n[i];
+    res.innerHTML = rev;
+}
+</script>
+
+<input id="num">
+<button onclick="reverse()">Reverse</button>
+<p id="res"></p>
+</body>
+</html>

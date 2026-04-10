@@ -1,0 +1,17 @@
+<html>
+<body>
+<script>
+function odd() {
+    var n = num.value;
+    var out = "";
+    for (var i = 1; i <= n; i++)
+        if (i % 2 != 0) out += i + " ";
+    res.innerHTML = out;
+}
+</script>
+
+<input id="num">
+<button onclick="odd()">Show</button>
+<p id="res"></p>
+</body>
+</html>

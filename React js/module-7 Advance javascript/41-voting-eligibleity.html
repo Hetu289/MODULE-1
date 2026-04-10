@@ -1,0 +1,14 @@
+<html>
+<body>
+<script>
+function vote() {
+    var age = age1.value;
+    res.innerHTML = (age >= 18) ? "Eligible" : "Not Eligible";
+}
+</script>
+
+<input id="age1" placeholder="Age">
+<button onclick="vote()">Check</button>
+<p id="res"></p>
+</body>
+</html>
